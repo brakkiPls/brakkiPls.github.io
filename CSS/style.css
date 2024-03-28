@@ -1,0 +1,104 @@
+html{
+    overflow: hidden;
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_video{
+    position: absolute;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+@media (min-aspect-ratio) {
+    .bg_video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio) {
+    .bg_video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.cloud_wrap{
+    height: 1080px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.cloud_wrap::before, .cloud_wrap::after{
+    content: "";
+    position: absolute;
+    height: 1080px;
+    width: 100%;
+}
+
+.cloud_wrap::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.cloud_wrap::before{
+    left: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.cloud_wrap .cloud_track{
+    display: flex;
+    width: calc(100% * 2);
+}
+
+.cloud_wrap .bg_clouds{
+    width: 1920px;
+    height: 1080px;
+}
+
+.bg_clouds{
+    filter: opacity(5%) blur(3px);
+    display: flex;
+    width: 1920px;
+    animation: scroll 60s linear infinite;
+}
+
+.bg_city{
+    filter: blur(3px);
+    display: flex;
+    position: relative;
+}
+
+@keyframes scroll {
+    from {
+        transform: translate(-100%);
+    }
+    to {
+        transform: translate(x);
+    }
+}
+
+#main_box{
+    position: absolute;
+    top: 25px;
+    width: 500px;
+    height: 900px;
+    background:  #aabbe0;
+    filter: opacity(25%);
+    border-radius: 25px;
+    box-shadow: 10px 5px 5px #2a0542;
+}
