@@ -1,6 +1,8 @@
 body{
     height: 100%;
     overflow: hidden;
+    background-size: 100%;
+    background-image: none;
 }
 
 .bg{
