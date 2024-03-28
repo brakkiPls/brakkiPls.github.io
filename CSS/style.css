@@ -34,6 +34,7 @@ body{
 }
 
 .cloud_wrap{
+    right: -50%;
     height: 1080px;
     overflow: visible;
     position: relative;
@@ -80,6 +81,7 @@ body{
 }
 
 .bg_city{
+    left: -50%;
     filter: blur(3px);
     display: flex;
     position: relative;
