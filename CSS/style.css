@@ -1,5 +1,7 @@
 body{
-    overflow: hidden;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .bg{
@@ -33,7 +35,6 @@ body{
 
 .cloud_wrap{
     height: 1080px;
-    overflow: hidden;
     position: relative;
     width: 100%;
     display: flex;
