@@ -77,7 +77,7 @@ body{
     filter: opacity(5%) blur(3px);
     display: flex;
     width: 1920px;
-    animation: scroll 5s linear infinite;
+    animation: scroll 60s linear infinite;
 }
 
 .bg_city{
