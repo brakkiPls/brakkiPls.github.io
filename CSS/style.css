@@ -1,7 +1,6 @@
 body{
     overflow: hidden;
     background-color: #093561;
-    z-index: -2;
 }
 
 .bg{
@@ -11,12 +10,12 @@ body{
     overflow: hidden;
     filter: blur(0.1vh);
     width: 100%;
+    z-index: -5;
 }
 
 .bg_video{
     top: 0vh;
     display: flex;
-    z-index: -1;
     width: 100%;
 }
 
@@ -50,18 +49,49 @@ body{
     top: 0vh;
     position: absolute;
     width: 100%;
+}
+
+.title, .logo{
+    position: relative;
+    display: flex;
     object-fit: cover;
-    object-position: center;
+    overflow: visible;
+    margin: auto;
+    margin-top: 5vh;
+    width: 500px;
+    height: 20vh;
+    z-index: 5;
+}
+
+.logo{
+    margin-top: -17vh;
+    object-fit: scale-down;
+    width: 500px;
+    height: 250px;
 }
 
 .main_box{
-    width: 40vw;
-    height: 70vh;
+    object-position: bottom;
+    display: flex;
+    overflow: hidden;
+    width: 500px;
+    height: 700px;
     background:  #aabbe0;
-    margin-top: 25vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    margin-top: -7vh;
     filter: opacity(25%);
-    border-radius: 25px;
+    border-radius: 5%;
     box-shadow: 10px 5px 5px #2a0542;
+}
+
+@media only screen and (max-width: 500px){
+    .main_box, .title, .logo {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-height: 960px){
+    body {
+        overflow-y: visible;
+    }
 }
