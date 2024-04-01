@@ -6,17 +6,18 @@ body{
 
 .bg{
     top: 0vh;
-    left: calc((100% - 1920px) / 2 + 100px);
+    left: 0vw;
     position: absolute;
     overflow: hidden;
     filter: blur(0.1vh);
-    height: 100%;
+    width: 100%;
 }
 
 .bg_video{
+    top: 0vh;
     display: flex;
     z-index: -1;
-    height: 100%;
+    width: 100%;
 }
 
 .bg_clouds{
@@ -49,6 +50,8 @@ body{
     top: 0vh;
     position: absolute;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .main_box{
