@@ -1,4 +1,6 @@
 body{
+    width: auto;
+    height: 100%;
     overflow: hidden;
     position: relative;
     background-color: #093561;
