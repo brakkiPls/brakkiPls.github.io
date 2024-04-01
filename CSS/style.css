@@ -8,6 +8,7 @@ body{
     top: 0vh;
     left: 0vw;
     position: absolute;
+    overflow: hidden;
     filter: blur(0.3vh);
     width: 100%;
 }
