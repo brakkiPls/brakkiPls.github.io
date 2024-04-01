@@ -1,6 +1,4 @@
 body{
-    width: auto;
-    height: 100vk;
     overflow: hidden;
     position: relative;
     background-color: #093561;
@@ -8,8 +6,8 @@ body{
 }
 
 .bg{
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     position: relative;
     display: flex;
     align-items: center;
@@ -17,11 +15,12 @@ body{
 }
 
 .bg_video{
+
     position: absolute;
     z-index: -1;
     filter: blur(3px);
 }
-/*
+
 @media (min-aspect-ratio) {
     .bg_video {
         width: 1920px;
@@ -35,10 +34,10 @@ body{
         height: 1080px;
     }
 }
-*/
+
 .cloud_wrap{
     right: -50vw;
-    height: 1080px;
+    height: 100vh;
     overflow: visible;
     position: relative;
     width: 100vw;
@@ -93,9 +92,9 @@ body{
     }
 }
 
-#main_box{
+.main_box{
+    align-self: center;
     position: absolute;
-    top: 100px;
     width: 500px;
     height: 750px;
     background:  #aabbe0;
