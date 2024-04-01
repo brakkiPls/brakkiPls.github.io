@@ -1,103 +1,62 @@
 body{
     overflow: hidden;
-    position: relative;
     background-color: #093561;
     z-index: -2;
 }
 
 .bg{
-    width: auto;
-    height: auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 0vh;
+    left: 0vw;
+    position: absolute;
+    filter: blur(0.3vh);
+    width: 100%;
 }
 
 .bg_video{
-
-    position: absolute;
+    display: flex;
     z-index: -1;
-    filter: blur(3px);
-}
-
-@media (min-aspect-ratio) {
-    .bg_video {
-        width: 1920px;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio) {
-    .bg_video {
-        width: auto;
-        height: 1080px;
-    }
-}
-
-.cloud_wrap{
-    right: -50vw;
-    height: 100vh;
-    overflow: visible;
-    position: relative;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-}
-
-.cloud_wrap::before, .cloud_wrap::after{
-    content: "";
-    position: absolute;
-    height: 1080px;
-    width: 100vw;
-}
-
-.cloud_wrap::after{
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-
-.cloud_wrap::before{
-    left: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-
-.cloud_wrap .cloud_track{
-    display: flex;
-    width: calc(100vw * 2);
+    width: 100%;
 }
 
 .bg_clouds{
-    filter: opacity(5%) blur(3px);
-    display: flex;
-    width: 1920px;
+    filter: opacity(5%);
+    width: 100%;
+    top: 0vh;
+    position: absolute;
     animation: scroll 60s linear infinite;
 }
 
-.bg_city{
-    left: -50vw;
-    filter: blur(3px);
-    display: flex;
-    position: relative;
+.bg_clouds2{
+    filter: opacity(5%);
+    width: 100%;
+    top: 0vh;
+    left: 100%;
+    position: absolute;
+    animation: scroll 60s linear infinite;
 }
 
 @keyframes scroll {
     from {
-        transform: translate(-100vw);
+        transform: translate(-100%);
     }
     to {
-        transform: translate(x);
+        transform: translate(0%);
     }
 }
 
-.main_box{
-    align-self: center;
+.bg_city{
+    top: 0vh;
     position: absolute;
+    width: 100%;
+}
+
+.main_box{
     width: 500px;
     height: 750px;
     background:  #aabbe0;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
     filter: opacity(25%);
     border-radius: 25px;
     box-shadow: 10px 5px 5px #2a0542;
