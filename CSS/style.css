@@ -6,7 +6,7 @@ body{
 
 .bg{
     top: 0vh;
-    left: 0vw;
+    left: calc((100vw - 1920px)/2);
     position: absolute;
     overflow: hidden;
     filter: blur(0.1vh);
