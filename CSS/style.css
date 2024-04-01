@@ -1,8 +1,8 @@
 body{
-    width: auto;
-    height: 100%;
     overflow: hidden;
     position: relative;
+    background-color: #093561;
+    z-index: -2;
 }
 
 .bg{
@@ -19,10 +19,10 @@ body{
     z-index: -1;
     filter: blur(3px);
 }
-
+/*
 @media (min-aspect-ratio) {
     .bg_video {
-        width: 100%;
+        width: 1920px;
         height: auto;
     }
 }
@@ -30,10 +30,10 @@ body{
 @media (max-aspect-ratio) {
     .bg_video {
         width: auto;
-        height: 100%;
+        height: 1080px;
     }
 }
-
+*/
 .cloud_wrap{
     right: -50%;
     height: 1080px;
@@ -42,7 +42,6 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 20px;
 }
 
 .cloud_wrap::before, .cloud_wrap::after{
