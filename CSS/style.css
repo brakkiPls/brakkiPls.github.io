@@ -1,6 +1,6 @@
 body{
     width: auto;
-    height: 100%;
+    height: 100vk;
     overflow: hidden;
     position: relative;
     background-color: #093561;
@@ -8,7 +8,7 @@ body{
 }
 
 .bg{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: relative;
     display: flex;
@@ -37,11 +37,11 @@ body{
 }
 */
 .cloud_wrap{
-    right: -50%;
+    right: -50vw;
     height: 1080px;
     overflow: visible;
     position: relative;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
 }
@@ -50,7 +50,7 @@ body{
     content: "";
     position: absolute;
     height: 1080px;
-    width: 100%;
+    width: 100vw;
 }
 
 .cloud_wrap::after{
@@ -67,7 +67,7 @@ body{
 
 .cloud_wrap .cloud_track{
     display: flex;
-    width: calc(100% * 2);
+    width: calc(100vw * 2);
 }
 
 .bg_clouds{
@@ -78,7 +78,7 @@ body{
 }
 
 .bg_city{
-    left: -50%;
+    left: -50vw;
     filter: blur(3px);
     display: flex;
     position: relative;
@@ -86,7 +86,7 @@ body{
 
 @keyframes scroll {
     from {
-        transform: translate(-100%);
+        transform: translate(-100vw);
     }
     to {
         transform: translate(x);
