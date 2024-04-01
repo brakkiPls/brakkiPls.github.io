@@ -69,10 +69,10 @@ body{
     width: calc(100% * 2);
 }
 
-.cloud_wrap .bg_clouds{
+/*.cloud_wrap .bg_clouds{
     width: 1920px;
     height: 1080px;
-}
+}*/
 
 .bg_clouds{
     filter: opacity(5%) blur(3px);
