@@ -61,14 +61,14 @@ body{
     object-fit: cover;
     overflow: visible;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 50px;
     width: 500px;
     height: 20vh;
     z-index: 5;
 }
 
 .logo{
-    margin-top: -17vh;
+    margin-top: -165px;
     object-fit: scale-down;
     width: 500px;
     height: 250px;
@@ -82,7 +82,7 @@ body{
     height: 700px;
     background:  #aabbe0;
     margin: auto;
-    margin-top: -7vh;
+    margin-top: -65px;
     filter: opacity(25%);
     border-radius: 5%;
     box-shadow: 10px 5px 5px #2a0542;
