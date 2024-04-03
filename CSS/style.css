@@ -1,5 +1,9 @@
 html{
     scroll-behavior: smooth;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 body{
@@ -75,6 +79,10 @@ body{
     width: 500px;
     height: 20vh;
     z-index: 5;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 .logo{
