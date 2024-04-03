@@ -15,12 +15,16 @@ body{
     filter: blur(0.1vh);
     width: 100%;
     z-index: -5;
+    object-fit: cover;
+    height: 100%;
 }
 
 .bg_video{
     top: 0vh;
     display: flex;
     width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
 .bg_clouds{
@@ -29,6 +33,8 @@ body{
     top: 0vh;
     position: absolute;
     animation: scroll 60s linear infinite;
+    object-fit: cover;
+    height: 100%;
 }
 
 .bg_clouds2{
@@ -38,6 +44,8 @@ body{
     left: 100%;
     position: absolute;
     animation: scroll 60s linear infinite;
+    object-fit: cover;
+    height: 100%;
 }
 
 @keyframes scroll {
@@ -53,6 +61,8 @@ body{
     top: 0vh;
     position: absolute;
     width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
 .title, .logo{
