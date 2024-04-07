@@ -33,7 +33,7 @@ body{
 
 .bg_clouds{
     filter: opacity(5%);
-    width: 100%;
+    width: 1920px;
     top: 0vh;
     position: absolute;
     animation: scroll 60s linear infinite;
@@ -43,9 +43,9 @@ body{
 
 .bg_clouds2{
     filter: opacity(5%);
-    width: 100%;
+    width: 1920px;
     top: 0vh;
-    left: 100%;
+    left: 1920px;
     position: absolute;
     animation: scroll 60s linear infinite;
     object-fit: cover;
@@ -54,10 +54,10 @@ body{
 
 @keyframes scroll {
     from {
-        transform: translate(-100%);
+        transform: translate(-1920px);
     }
     to {
-        transform: translate(0%);
+        transform: translate(0px);
     }
 }
 
