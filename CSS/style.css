@@ -94,6 +94,46 @@ body{
     height: 250px;
 }
 
+.logo:hover{
+    animation: dance 5s ease-in-out infinite;
+}
+
+@keyframes dance {
+    0% {
+        transform: rotate(-25deg);
+    }
+    10% {
+        transform: rotate(25deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: scaleX(-1);
+    }
+    40% {
+        transform: rotate(-25deg) scaleX(-1);
+    }
+    50% {
+        transform: rotate(25deg) scaleX(1);
+    }
+    60% {
+        transform: rotate(-25deg);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: scaleX(-1);
+    }
+    90% {
+        transform: rotate(25deg) scaleX(-1);
+    }
+    100% {
+        transform: rotate(-25deg) scaleX(1);
+    }
+}
+
 .main_box{
     object-position: bottom;
     display: flex;
