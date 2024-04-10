@@ -153,8 +153,6 @@ img {
     .main_box, .title, .logo, .bg_box{
         width: 100%;
     }
-    .socials {
-    }
     .twitch, .discord {
         margin-top: -250px;
     }
@@ -173,6 +171,7 @@ img {
     position: relative;
     scale: 0.2;
     overflow: visible;
+    left: -6px;
 }
 
 .twitch:hover, .kofi:hover, .youtube:hover, .github:hover, .discord:hover {
