@@ -1,14 +1,14 @@
-html{
-    scroll-behavior: smooth;
+body{
+    overflow: hidden;
+    background-color: #093561;
+}
+
+img {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-}
-
-body{
-    overflow: hidden;
-    background-color: #093561;
+    user-select: none;
 }
 
 .bg{
@@ -81,10 +81,6 @@ body{
     width: 500px;
     height: 20vh;
     z-index: 5;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
 }
 
 .logo{
@@ -153,9 +149,14 @@ body{
     background-color: #aabbe0;
 }
 
-@media only screen and (max-width: 500px){
-    .main_box, .title, .logo, .bg_box {
+@media only screen and (max-width: 530px){
+    .main_box, .title, .logo, .bg_box{
         width: 100%;
+    }
+    .socials {
+    }
+    .twitch, .discord {
+        margin-top: -250px;
     }
 }
 
@@ -166,53 +167,64 @@ body{
 }
 
 .socials {
+    width: 100%;
     display: flex;
-    top: -250px;
+    top: -90px;
     position: relative;
     scale: 0.2;
     overflow: visible;
-    left: -40%;
+}
+
+.twitch:hover, .kofi:hover, .youtube:hover, .github:hover, .discord:hover {
+    scale: 1.1;
+    border-radius: 200px/100px;
+    z-index: 5;
 }
 
 .twitch:hover {
-    scale: 1.1;
-    border-radius: 50%/30%;
     box-shadow: 10px 10px 100px 50px #6441A5;
     background-color: #6441A5;
 }
 
 .kofi:hover {
-    scale: 1.1;
-    border-radius: 50%/30%;
     box-shadow: 10px 10px 100px 50px #13C3FF;
     background-color: #13C3FF;
 }
 
 .youtube:hover {
-    scale: 1.1;
-    border-radius: 50%/25%;
     box-shadow: 10px 10px 100px 50px #FF0000;
     background-color: #FF0000;
 }
 
 .github:hover {
-    scale: 1.1;
-    border-radius: 50%/30%;
     box-shadow: 10px 10px 100px 50px #333;
     background-color: #333;
 }
 
 .discord:hover{
-    scale: 1.1;
-    border-radius: 50%/30%;
     box-shadow: 10px 10px 100px 50px #5865F2;
     background-color: #5865F2;
 }
 
-.kofi, .youtube, .github, .discord {
-    margin-left: -17%;
+.kofi, .youtube, .github, .discord, .twitch {
+    position: absolute;
+    transition-duration: 0.25s;
+}
+
+.kofi {
+    left: -190%;
 }
 
 .twitch {
-    margin-left: 5%;
+    top: -25px;
+    left: -95%;
+}
+
+.discord {
+    top: -25px;
+    left: 95%;
+}
+
+.github {
+    left: 190%;
 }
