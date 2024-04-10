@@ -136,16 +136,15 @@ body{
 
 .main_box{
     object-position: bottom;
-    overflow: hidden;
     width: 500px;
     height: 700px;
     margin: auto;
-    border-radius: 5%;
     margin-top: -65px;
     box-shadow: 10px 5px 5px #1205423d;
 }
 
 .bg_box{
+    border-radius: 5%;
     display: flex;
     width: 500px;
     height: 700px;
@@ -155,7 +154,7 @@ body{
 }
 
 @media only screen and (max-width: 500px){
-    .main_box, .title, .logo {
+    .main_box, .title, .logo, .bg_box {
         width: 100%;
     }
 }
@@ -167,11 +166,53 @@ body{
 }
 
 .socials {
+    display: flex;
     top: -250px;
-    left: -210px;
     position: relative;
+    scale: 0.2;
+    overflow: visible;
+    left: -40%;
+}
+
+.twitch:hover {
+    scale: 1.1;
+    border-radius: 50%/30%;
+    box-shadow: 10px 10px 100px 50px #6441A5;
+    background-color: #6441A5;
+}
+
+.kofi:hover {
+    scale: 1.1;
+    border-radius: 50%/30%;
+    box-shadow: 10px 10px 100px 50px #13C3FF;
+    background-color: #13C3FF;
+}
+
+.youtube:hover {
+    scale: 1.1;
+    border-radius: 50%/25%;
+    box-shadow: 10px 10px 100px 50px #FF0000;
+    background-color: #FF0000;
+}
+
+.github:hover {
+    scale: 1.1;
+    border-radius: 50%/30%;
+    box-shadow: 10px 10px 100px 50px #333;
+    background-color: #333;
+}
+
+.discord:hover{
+    scale: 1.1;
+    border-radius: 50%/30%;
+    box-shadow: 10px 10px 100px 50px #5865F2;
+    background-color: #5865F2;
+}
+
+.kofi, .youtube, .github, .discord {
+    margin-left: -17%;
 }
 
 .twitch {
-    scale: 0.2;
+    margin-left: 5%;
 }
