@@ -89,6 +89,7 @@ img {
     object-fit: scale-down;
     width: auto;
     height: 250px;
+    pointer-events: auto;
 }
 
 .logo:hover{
