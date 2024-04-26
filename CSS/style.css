@@ -18,6 +18,7 @@ img, a {
     -moz-user-drag: none;
     -o-user-drag: none;
     user-select: none;
+    transition-duration: 0.25s;
 }
 
 .bg{
@@ -204,7 +205,6 @@ img, a {
 .quotes, .art, .projects, .shop, .docs, .boards {
     position: absolute;
     scale: 0.35;
-    transition-duration: 0.25s;
 }
 
 .art {
@@ -328,7 +328,6 @@ img, a {
 .kofi, .youtube, .github, .discord, .twitch {
     position: absolute;
     scale: 0.2;
-    transition-duration: 0.25s;
 }
 
 .twitch, .discord {
