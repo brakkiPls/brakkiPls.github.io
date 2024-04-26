@@ -192,6 +192,91 @@ img {
     box-shadow: 10px 5px 5px #120542;
 }
 
+.circle {
+    position: absolute;
+    top: 260px;
+    animation: fadeInBG 1s;
+}
+
+.quotes, .art, .projects, .shop, .docs, .boards{
+    position: absolute;
+    scale: 0.35;
+}
+
+.art {
+    margin-top: -140px;
+    margin-left: -75px;
+    animation: fadeInArt 0.5s;
+}
+
+@keyframes fadeInArt {
+    from {
+        margin-top: -190px;
+        margin-left: -100px;
+    }
+}
+
+.projects {
+    margin-top: -140px;
+    margin-left: 75px;
+    animation: fadeInProjects 0.5s;
+}
+
+@keyframes fadeInProjects {
+    from {
+        margin-top: -190px;
+        margin-left: 100px;
+    }
+}
+
+.shop {
+    margin-left: -150px;
+    animation: fadeInShop 0.5s;
+}
+
+@keyframes fadeInShop {
+    from {
+        margin-left: -200px;
+    }
+}
+
+.boards {
+    margin-left: 150px;
+    animation: fadeInBoards 0.5s;
+}
+
+@keyframes fadeInBoards {
+    from {
+        margin-left: 200px;
+    }
+}
+
+.docs {
+    margin-top: 140px;
+    margin-left: -75px;
+    animation: fadeInDocs 0.5s;
+}
+
+@keyframes fadeInDocs {
+    from {
+        margin-top: 190px;
+        margin-left: -100px;
+    }
+}
+
+.quotes {
+    margin-top: 140px;
+    margin-left: 75px;
+    animation: fadeInQuotes 0.5s;
+}
+
+@keyframes fadeInQuotes {
+    from {
+        margin-top: 190px;
+        margin-left: 100px;
+    }
+}
+
 .socials {
     display: flex;
     align-items: center;
@@ -200,12 +285,13 @@ img {
     margin-top: -135px;
     width: 500px;
     height: 150px;
+    animation: fadeInBG 1s;
 }
 
 .twitch:hover, .kofi:hover, .youtube:hover, .github:hover, .discord:hover {
     scale: 0.25;
     border-radius: 300px;
-    z-index: 5;
+    z-index: 10;
 }
 
 .twitch:hover {
