@@ -12,13 +12,12 @@ body{
         background-color: #093561;
     }
 }
-img {
+img, a {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
     user-select: none;
-    pointer-events: none;
 }
 
 .bg{
@@ -115,7 +114,6 @@ img {
     object-fit: scale-down;
     width: auto;
     height: 250px;
-    pointer-events: auto;
     animation: fadeInLogo 1s; 
 }
 
@@ -198,9 +196,15 @@ img {
     animation: fadeInBG 1s;
 }
 
-.quotes, .art, .projects, .shop, .docs, .boards{
+.quotes:hover, .art:hover, .projects:hover, .shop:hover, .docs:hover, .boards:hover {
+    scale: 0.4;
+    z-index: 5;
+}
+
+.quotes, .art, .projects, .shop, .docs, .boards {
     position: absolute;
     scale: 0.35;
+    transition-duration: 0.25s;
 }
 
 .art {
@@ -236,6 +240,7 @@ img {
 
 @keyframes fadeInShop {
     from {
+        margin-top: 0px;
         margin-left: -200px;
     }
 }
@@ -247,6 +252,7 @@ img {
 
 @keyframes fadeInBoards {
     from {
+        margin-top: 0px;
         margin-left: 200px;
     }
 }
@@ -291,7 +297,7 @@ img {
 .twitch:hover, .kofi:hover, .youtube:hover, .github:hover, .discord:hover {
     scale: 0.25;
     border-radius: 300px;
-    z-index: 10;
+    z-index: 5;
 }
 
 .twitch:hover {
@@ -386,26 +392,49 @@ img {
 }
 
 @media only screen and (max-width: 515px) {
-    .main_box, .title, .logo, .bg_box, .socials {
+    .main_box, .title, .logo, .bg_box, .socials, .circle {
         width: 100%;
     }
+
     .twitch, .discord {
         margin-top: -100px;
     }
-    .kofi{
+    .kofi {
         margin-right: 76%;
     }
-    
     .twitch {
         margin-right: 38%;
     }
-    
     .discord {
         margin-left: 38%;
     }
-    
     .github {
         margin-left: 76%;
+    }
+
+    .projects {
+        margin-top: -150px;
+        margin-left: 120px;
+    }
+    .boards {
+        margin-top: -15px;
+        margin-left: 120px;
+    }
+    .quotes {
+        margin-top: 120px;
+        margin-left: 120px;
+    }
+    .docs {
+        margin-top: 120px;
+        margin-left: -120px;
+    }
+    .shop {
+        margin-top: -15px;
+        margin-left: -120px;
+    }
+    .art {
+        margin-top: -150px;
+        margin-left: -120px;
     }
 }
 
