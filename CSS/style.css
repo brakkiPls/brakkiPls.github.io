@@ -1,8 +1,17 @@
 body{
     overflow: hidden;
-    background-color: #093561;
+    animation: fadeInBdy 1s;
+    background-color: #091624;
 }
 
+@keyframes fadeInBdy {
+    from {
+        background-color: #091624;
+    }
+    to {
+        background-color: #093561;
+    }
+}
 img {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -22,6 +31,16 @@ img {
     z-index: -5;
     object-fit: cover;
     height: 100%;
+    animation: fadeInBG 1s;
+}
+
+@keyframes fadeInBG {
+    from {
+        filter: opacity(0%);
+    }
+    to {
+        filter: opacity(100%);
+    }
 }
 
 .bg_video{
@@ -82,6 +101,13 @@ img {
     width: 500px;
     height: 200px;
     z-index: 5;
+    animation: fadeInTitle 0.5s;
+}
+
+@keyframes fadeInTitle {
+    from {
+        margin-top: 100px;
+    }
 }
 
 .logo{
@@ -90,10 +116,23 @@ img {
     width: auto;
     height: 250px;
     pointer-events: auto;
+    animation: fadeInLogo 1s; 
 }
 
 .logo:hover{
     animation: dance 5s ease-in-out infinite;
+}
+
+@keyframes fadeInLogo {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(-1); 
+    }
+    100% {
+        transform: scaleX(1);
+    }
 }
 
 @keyframes dance {
@@ -206,18 +245,58 @@ img {
 
 .kofi{
     margin-right: 400px;
+    animation: fadeInKofi 0.5s;
+}
+
+@keyframes fadeInKofi {
+    from {
+        margin-right: 500px;
+    }
 }
 
 .twitch {
     margin-right: 200px;
+    animation: fadeInTwitch 0.5s;
+}
+
+@keyframes fadeInTwitch {
+    from {
+        margin-right: 250px;
+        margin-top: 25px;
+    }
+}
+
+.youtube {
+    animation: fadeInYoutube 0.5s;
+}
+
+@keyframes fadeInYoutube {
+    from {
+        margin-top: 50px;
+    }
 }
 
 .discord {
     margin-left: 200px;
+    animation: fadeInDiscord 0.5s;
+}
+
+@keyframes fadeInDiscord {
+    from {
+        margin-left: 250px;
+        margin-top: 25px;
+    }
 }
 
 .github {
     margin-left: 400px;
+    animation: fadeInGithub 0.5s;
+}
+
+@keyframes fadeInGithub {
+    from {
+        margin-left: 500px;
+    }
 }
 
 @media only screen and (max-width: 515px) {
