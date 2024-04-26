@@ -192,8 +192,11 @@ img, a {
 }
 
 .circle {
-    position: absolute;
-    top: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -340px;
+    width: 100%;
     animation: fadeInBG 1s;
 }
 
@@ -208,78 +211,78 @@ img, a {
 }
 
 .art {
-    margin-top: -140px;
-    margin-left: -75px;
+    margin-top: -280px;
+    margin-left: -150px;
     animation: fadeInArt 0.5s;
 }
 
 @keyframes fadeInArt {
     from {
-        margin-top: -190px;
-        margin-left: -100px;
+        margin-top: -330px;
+        margin-left: -200px;
     }
 }
 
 .projects {
-    margin-top: -140px;
-    margin-left: 75px;
+    margin-top: -280px;
+    margin-left: 150px;
     animation: fadeInProjects 0.5s;
 }
 
 @keyframes fadeInProjects {
     from {
-        margin-top: -190px;
-        margin-left: 100px;
+        margin-top: -330px;
+        margin-left: 200px;
     }
 }
 
 .shop {
-    margin-left: -150px;
+    margin-left: -300px;
     animation: fadeInShop 0.5s;
 }
 
 @keyframes fadeInShop {
     from {
         margin-top: 0px;
-        margin-left: -200px;
+        margin-left: -350px;
     }
 }
 
 .boards {
-    margin-left: 150px;
+    margin-left: 300px;
     animation: fadeInBoards 0.5s;
 }
 
 @keyframes fadeInBoards {
     from {
         margin-top: 0px;
-        margin-left: 200px;
+        margin-left: 350px;
     }
 }
 
 .docs {
-    margin-top: 140px;
-    margin-left: -75px;
+    margin-top: 280px;
+    margin-left: -150px;
     animation: fadeInDocs 0.5s;
 }
 
 @keyframes fadeInDocs {
     from {
-        margin-top: 190px;
-        margin-left: -100px;
+        margin-top: 330px;
+        margin-left: -200px;
     }
 }
 
 .quotes {
-    margin-top: 140px;
-    margin-left: 75px;
+    margin-top: 280px;
+    margin-left: 150px;
     animation: fadeInQuotes 0.5s;
 }
 
 @keyframes fadeInQuotes {
     from {
-        margin-top: 190px;
-        margin-left: 100px;
+        margin-top: 330px;
+        margin-left: 200px;
     }
 }
 
@@ -288,7 +291,7 @@ img, a {
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: -135px;
+    margin-top: 210px;
     width: 500px;
     height: 150px;
     animation: fadeInBG 1s;
@@ -411,29 +414,32 @@ img, a {
         margin-left: 76%;
     }
 
-    .projects {
-        margin-top: -150px;
-        margin-left: 120px;
+    .projects, .art, .boards, .shop, .quotes, .docs {
+        scale: 0.3;
     }
-    .boards {
-        margin-top: -15px;
-        margin-left: 120px;
+    .quotes:hover, .art:hover, .projects:hover, .shop:hover, .docs:hover, .boards:hover {
+        scale: 0.35;
     }
-    .quotes {
-        margin-top: 120px;
-        margin-left: 120px;
+    .projects, .art {
+        margin-top: -300px;
     }
-    .docs {
-        margin-top: 120px;
-        margin-left: -120px;
+    .boards, .shop {
+        margin-top: -30px;
+    }
+    .quotes, .docs {
+        margin-top: 230px;
+    }
+    .art, .docs {
+        margin-left: -30%;
+    }
+    .projects, .quotes {
+        margin-left: 30%;
     }
     .shop {
-        margin-top: -15px;
-        margin-left: -120px;
+        margin-left: -58%;
     }
-    .art {
-        margin-top: -150px;
-        margin-left: -120px;
+    .boards {
+        margin-left: 58%;
     }
 }
 
