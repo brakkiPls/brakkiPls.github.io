@@ -95,9 +95,10 @@ img, a {
     position: relative;
     display: flex;
     object-fit: cover;
+    object-position: top;
     overflow: visible;
     margin: auto;
-    margin-top: 40px;
+    margin-top: -40px;
     width: 500px;
     height: 200px;
     z-index: 5;
@@ -111,7 +112,8 @@ img, a {
 }
 
 .logo{
-    margin-top: -165px;
+    object-position: center;
+    margin-top: -100px;
     object-fit: scale-down;
     width: auto;
     height: 250px;
