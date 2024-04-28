@@ -445,7 +445,7 @@ img, a {
     }
 }
 
-@media only screen and (max-height: 960px) {
+@media only screen and (max-height: 860px) {
     body {
         overflow-y: visible;
     }

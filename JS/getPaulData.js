@@ -23,7 +23,7 @@ fetch('Data/data.json')
         row.appendChild(total)
         
         const avg = document.createElement("td")
-        avg.textContent = element.Avg
+        avg.textContent = parseFloat(element.Avg).toFixed(2)
         row.appendChild(avg)
 
         tableBody.appendChild(row)
