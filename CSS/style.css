@@ -200,6 +200,20 @@ img, a {
     margin-top: -340px;
     width: 100%;
     animation: fadeInBG 1s;
+    transition-duration: 0.25s;
+}
+
+.circleBG {
+    border-radius: 50%;
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    z-index: -1;
+}
+
+.circleItem {
+    border-radius: 50%;
+    border: 10px solid rgb(0, 52, 92);
 }
 
 .quotes:hover, .art:hover, .projects:hover, .shop:hover, .docs:hover, .boards:hover {
@@ -210,6 +224,22 @@ img, a {
 .quotes, .art, .projects, .shop, .docs, .boards {
     position: absolute;
     scale: 0.35;
+}
+
+.docs:hover {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .art {
