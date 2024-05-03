@@ -211,6 +211,7 @@ img, a {
 .quotes, .art, .projects, .shop, .docs, .boards {
     position: absolute;
     scale: 0.35;
+    z-index: 1;
 }
 
 .docs:hover {
@@ -247,8 +248,8 @@ img, a {
 
 .projectsCover {
     filter: invert();
-    z-index: 2;
     position: absolute;
+    z-index: 2;
     left: 0px;
 }
 
