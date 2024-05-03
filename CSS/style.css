@@ -217,7 +217,7 @@ img, a {
 .art {
     margin-top: -280px;
     margin-left: -150px;
-    /*animation: fadeInArt 0.5s;*/
+    animation: fadeInArt 0.5s;
 }
 
 .art:hover {
@@ -247,7 +247,7 @@ img, a {
 .projects {
     margin-top: -280px;
     margin-left: 150px;
-    /*animation: fadeInProjects 0.5s;*/
+    animation: fadeInProjects 0.5s;
 }
 
 .projectsCover {
@@ -285,7 +285,7 @@ img, a {
 
 .shop {
     margin-left: -300px;
-    /*animation: fadeInShop 0.5s;*/
+    animation: fadeInShop 0.5s;
 }
 
 .shop:hover {
@@ -313,7 +313,7 @@ img, a {
 
 .boards {
     margin-left: 300px;
-    /*animation: fadeInBoards 0.5s;*/
+    animation: fadeInBoards 0.5s;
 }
 
 .boards:hover {
@@ -348,7 +348,7 @@ img, a {
 .docs{
     margin-top: 280px;
     margin-left: -150px;
-    /*animation: fadeInDocs 0.5s;*/
+    animation: fadeInDocs 0.5s;
 }
 
 .docs:hover {
@@ -374,7 +374,7 @@ img, a {
 .quotes {
     margin-top: 280px;
     margin-left: 150px;
-    /*animation: fadeInQuotes 0.5s;*/
+    animation: fadeInQuotes 0.5s;
 }
 
 .quotes:hover {
