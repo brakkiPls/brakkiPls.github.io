@@ -203,19 +203,6 @@ img, a {
     transition-duration: 0.25s;
 }
 
-.circleBG {
-    border-radius: 50%;
-    position: absolute;
-    left: 11px;
-    top: 11px;
-    z-index: -1;
-}
-
-.circleItem {
-    border-radius: 50%;
-    border: 10px solid rgb(0, 52, 92);
-}
-
 .quotes:hover, .art:hover, .projects:hover, .shop:hover, .docs:hover, .boards:hover {
     scale: 0.4;
     z-index: 5;
@@ -234,9 +221,6 @@ img, a {
     0% {
         transform: rotate(0deg);
     }
-    50% {
-        transform: rotate(180deg);
-    }
     100% {
         transform: rotate(360deg);
     }
@@ -245,7 +229,7 @@ img, a {
 .art {
     margin-top: -280px;
     margin-left: -150px;
-    animation: fadeInArt 0.5s;
+    /*animation: fadeInArt 0.5s;*/
 }
 
 @keyframes fadeInArt {
@@ -258,7 +242,14 @@ img, a {
 .projects {
     margin-top: -280px;
     margin-left: 150px;
-    animation: fadeInProjects 0.5s;
+    /*animation: fadeInProjects 0.5s;*/
+}
+
+.projectsCover {
+    filter: invert();
+    z-index: 2;
+    position: absolute;
+    left: 0px;
 }
 
 @keyframes fadeInProjects {
@@ -270,7 +261,7 @@ img, a {
 
 .shop {
     margin-left: -300px;
-    animation: fadeInShop 0.5s;
+    /*animation: fadeInShop 0.5s;*/
 }
 
 @keyframes fadeInShop {
@@ -282,7 +273,7 @@ img, a {
 
 .boards {
     margin-left: 300px;
-    animation: fadeInBoards 0.5s;
+    /*animation: fadeInBoards 0.5s;*/
 }
 
 @keyframes fadeInBoards {
@@ -292,10 +283,10 @@ img, a {
     }
 }
 
-.docs {
+.docs{
     margin-top: 280px;
     margin-left: -150px;
-    animation: fadeInDocs 0.5s;
+    /*animation: fadeInDocs 0.5s;*/
 }
 
 @keyframes fadeInDocs {
@@ -308,7 +299,7 @@ img, a {
 .quotes {
     margin-top: 280px;
     margin-left: 150px;
-    animation: fadeInQuotes 0.5s;
+    /*animation: fadeInQuotes 0.5s;*/
 }
 
 @keyframes fadeInQuotes {
