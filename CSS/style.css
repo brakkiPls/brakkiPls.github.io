@@ -214,23 +214,14 @@ img, a {
     z-index: 1;
 }
 
-.docs:hover {
-    animation: rotate 3s linear infinite;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .art {
     margin-top: -280px;
     margin-left: -150px;
     /*animation: fadeInArt 0.5s;*/
+}
+
+.art:hover {
+    animation: chill 2s ease-out infinite;
 }
 
 @keyframes fadeInArt {
@@ -238,6 +229,19 @@ img, a {
         margin-top: -330px;
         margin-left: -200px;
     }
+}
+
+@keyframes chill {
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: scaleY(0.95) scaleX(1.1);
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+    
 }
 
 .projects {
@@ -253,6 +257,10 @@ img, a {
     left: 0px;
 }
 
+.projects:hover {
+    animation: hammer 1.5s linear infinite;
+}
+
 @keyframes fadeInProjects {
     from {
         margin-top: -330px;
@@ -260,9 +268,28 @@ img, a {
     }
 }
 
+@keyframes hammer {
+    0% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(50deg) scaleX(1);
+    }
+    60% {
+        transform: rotate(-10deg) scaleX(1.1);
+    }
+    100% {
+        transform: rotate(0deg) scaleX(1);
+    }
+}
+
 .shop {
     margin-left: -300px;
     /*animation: fadeInShop 0.5s;*/
+}
+
+.shop:hover {
+    animation: fall 3s ease-in infinite;
 }
 
 @keyframes fadeInShop {
@@ -272,9 +299,25 @@ img, a {
     }
 }
 
+@keyframes fall {
+    0% {
+        transform: rotate(0deg) scaleX(1);
+    }
+    20% {
+        transform: rotate(90deg) scaleX(0.9);
+    }
+    90% {
+        transform: rotate(0deg) scaleX(1);
+    }
+}
+
 .boards {
     margin-left: 300px;
     /*animation: fadeInBoards 0.5s;*/
+}
+
+.boards:hover {
+    animation: wiggle 1s linear infinite;
 }
 
 @keyframes fadeInBoards {
@@ -284,10 +327,32 @@ img, a {
     }
 }
 
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg) scaleX(1);
+    }
+    25% {
+        transform: rotate(15deg) scaleX(0.95);
+    }
+    50% {
+        transform: rotate(0deg) scaleX(1);
+    }
+    75% {
+        transform: rotate(-15deg) scaleX(0.95);
+    }
+    100% {
+        transform: rotate(0deg) scaleX(1);
+    }
+}
+
 .docs{
     margin-top: 280px;
     margin-left: -150px;
     /*animation: fadeInDocs 0.5s;*/
+}
+
+.docs:hover {
+    animation: rotate 3s linear infinite;
 }
 
 @keyframes fadeInDocs {
@@ -297,16 +362,41 @@ img, a {
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .quotes {
     margin-top: 280px;
     margin-left: 150px;
     /*animation: fadeInQuotes 0.5s;*/
 }
 
+.quotes:hover {
+    animation: rawr 0.5s ease-in-out infinite;
+}
+
 @keyframes fadeInQuotes {
     from {
         margin-top: 330px;
         margin-left: 200px;
+    }
+}
+
+@keyframes rawr {
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        transform: scaleY(1.1) scaleX(0.95);
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
     }
 }
 
