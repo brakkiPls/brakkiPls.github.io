@@ -1,0 +1,27 @@
+.quoteBox {
+    border-radius: 3vh;
+    display: flex;
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    background-color: #94c1f5;
+    box-shadow: 10px 5px 5px #120542;
+    filter: opacity(70%);
+    overflow-y: scroll;
+}
+
+tr:hover {
+    background-color: #123d7e77;
+    color: white;
+    text-shadow: #120542 1px 1px;
+}
+
+#quotetable {
+    text-align: center;
+    padding: 15px;
+    font-family:'Segoe UI';
+    font-size: large;
+    font-weight: 600;
+    color: #120542;
+    text-shadow: #2e9aff 1px 1px;
+}

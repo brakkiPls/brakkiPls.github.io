@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>BM - Boards</title>
 		<link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+		<link rel="stylesheet" href="CSS/boardStyle.css">
 		<link rel="stylesheet" href="CSS/style.css">
 	</head>
 	<body>
@@ -17,18 +18,20 @@
 			<img src="Images/BGClouds.png" class="bg_clouds2">
 			<img src="Images/BGCity.png" class="bg_city">
 		</div>
-		<table id="paultable">
-			<thead>
-				<tr>
-					<th>Redeemer</th>
-					<th>Amount Redeemed</th>
-					<th>Highest Roll</th>
-					<th>Total Pauls collected</th>
-					<th>Paul Average</th>
-				</tr>
-			</thead>
-			<tbody></tbody>
-		</table>
+		<div class="paulBox">
+			<table id="paultable">
+				<thead>
+					<tr>
+						<th>Redeemer</th>
+						<th>Amount Redeemed</th>
+						<th>Highest Roll</th>
+						<th>Total Pauls collected</th>
+						<th>Paul Average</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
 		<script type="text/javascript" src="JS/getPaulData.js"></script>
 	</body>
 </html>
