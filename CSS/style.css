@@ -221,7 +221,7 @@ img, a {
 }
 
 .art:hover {
-    animation: chill 2s ease-out infinite;
+    animation: chill 2s ease-out infinite, fadeInArt 0.5s;
 }
 
 @keyframes fadeInArt {
@@ -258,7 +258,7 @@ img, a {
 }
 
 .projects:hover {
-    animation: hammer 1.5s linear infinite;
+    animation: hammer 1.5s linear infinite, fadeInProjects 0.5s;
 }
 
 @keyframes fadeInProjects {
@@ -289,7 +289,7 @@ img, a {
 }
 
 .shop:hover {
-    animation: fall 3s ease-in infinite;
+    animation: fall 3s ease-in infinite, fadeInShop 0.5s;
 }
 
 @keyframes fadeInShop {
@@ -317,7 +317,7 @@ img, a {
 }
 
 .boards:hover {
-    animation: wiggle 1s linear infinite;
+    animation: wiggle 1s linear infinite, fadeInBoards 0.5s;
 }
 
 @keyframes fadeInBoards {
@@ -352,7 +352,7 @@ img, a {
 }
 
 .docs:hover {
-    animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite, fadeInDocs 0.5s;
 }
 
 @keyframes fadeInDocs {
@@ -378,7 +378,7 @@ img, a {
 }
 
 .quotes:hover {
-    animation: rawr 0.5s ease-in-out infinite;
+    animation: rawr 0.5s ease-in-out infinite, fadeInQuotes 0.5s;
 }
 
 @keyframes fadeInQuotes {
