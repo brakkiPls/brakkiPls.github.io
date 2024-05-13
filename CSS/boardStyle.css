@@ -1,3 +1,19 @@
+#searchbar {
+    background-image: url('../Images/SearchIcon.png');
+    background-position: 6px 7px;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 700px;
+    margin: auto;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #123d7e77;
+    margin-bottom: 12px;
+    filter: opacity(70%);
+    background-color: #94c1f5;
+    border-radius: 1vh;
+  }
+
 .paulBox {
     border-radius: 3vh;
     display: flex;
@@ -8,6 +24,7 @@
     box-shadow: 10px 5px 5px #120542;
     filter: opacity(70%);
     overflow-y: scroll;
+    border: 2px solid #123d7e77;
 }
 
 tr:hover {

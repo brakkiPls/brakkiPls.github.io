@@ -8,6 +8,7 @@
     box-shadow: 10px 5px 5px #120542;
     filter: opacity(70%);
     overflow-y: scroll;
+    border: 2px solid #123d7e77;
 }
 
 tr:hover {
