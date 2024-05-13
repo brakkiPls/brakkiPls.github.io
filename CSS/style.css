@@ -121,7 +121,7 @@ img, a {
 }
 
 .logo:hover{
-    animation: dance 5s ease-in-out infinite;
+    animation: dance 5s ease-in-out infinite, fadeInLogo 1s;
 }
 
 @keyframes fadeInLogo {
@@ -211,17 +211,20 @@ img, a {
 .quotes, .art, .projects, .shop, .docs, .boards {
     position: absolute;
     scale: 0.35;
-    z-index: 1;
 }
 
 .art {
     margin-top: -280px;
     margin-left: -150px;
     animation: fadeInArt 0.5s;
+    mask-image: url(../Images/circleMask.png);
+    mask-repeat: no-repeat;
+    mask-composite: subtract;
 }
 
 .art:hover {
     animation: chill 2s ease-out infinite, fadeInArt 0.5s;
+    mask: none;
 }
 
 @keyframes fadeInArt {
@@ -248,13 +251,6 @@ img, a {
     margin-top: -280px;
     margin-left: 150px;
     animation: fadeInProjects 0.5s;
-}
-
-.projectsCover {
-    filter: invert();
-    position: absolute;
-    z-index: 2;
-    left: 0px;
 }
 
 .projects:hover {
@@ -507,7 +503,7 @@ img, a {
     }
 }
 
-@media only screen and (max-width: 515px) {
+@media only screen and (max-width: 480px) {
     .main_box, .title, .logo, .bg_box, .socials, .circle {
         width: 100%;
     }
@@ -554,6 +550,10 @@ img, a {
     }
     .boards {
         margin-left: 58%;
+    }
+    .art {
+        /*This still has to be fixed*/
+        mask: none;
     }
 }
 
