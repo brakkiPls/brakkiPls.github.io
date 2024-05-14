@@ -53,4 +53,5 @@ td {
     font-weight: 600;
     color: #120542;
     text-shadow: #2e9aff 1px 1px;
+    user-select: none;
 }
