@@ -1,4 +1,3 @@
-
 fetch('Data/data.json')
 .then(res => res.json())
 .then(data => {
@@ -27,5 +26,5 @@ fetch('Data/data.json')
         row.appendChild(avg)
 
         tableBody.appendChild(row)
-    });
+    })
 });

@@ -17,7 +17,7 @@
 .paulBox {
     border-radius: 3vh;
     display: flex;
-    width: 700px;
+    width: 810px;
     height: 600px;
     margin: auto;
     background-color: #94c1f5;
@@ -27,13 +27,39 @@
     border: 2px solid #123d7e77;
 }
 
-tr:hover {
+tbody tr:hover {
     background-color: #123d7e77;
     color: white;
     text-shadow: #120542 1px 1px;
 }
 
+td {
+    overflow: hidden;
+}
+
+.redeemer:hover{
+    background-color: #123d7e77;
+}
+
+.amount:hover{
+    background-color: #123d7e77;
+}
+
+.max:hover{
+    background-color: #123d7e77;
+}
+
+.total:hover{
+    background-color: #123d7e77;
+}
+
+.average:hover{
+    background-color: #123d7e77;
+}
+
 #paultable {
+    table-layout: fixed;
+    width: 1000px;
     text-align: center;
     padding: 15px;
     font-family:'Segoe UI';
