@@ -37,29 +37,15 @@ td {
     overflow: hidden;
 }
 
-.redeemer:hover{
+.redeemer:hover, .amount:hover, .max:hover, .total:hover, .average:hover{
     background-color: #123d7e77;
-}
-
-.amount:hover{
-    background-color: #123d7e77;
-}
-
-.max:hover{
-    background-color: #123d7e77;
-}
-
-.total:hover{
-    background-color: #123d7e77;
-}
-
-.average:hover{
-    background-color: #123d7e77;
+    color: white;
+    text-shadow: #120542 1px 1px;
 }
 
 #paultable {
     table-layout: fixed;
-    width: 1000px;
+    width: 100%;
     text-align: center;
     padding: 15px;
     font-family:'Segoe UI';
