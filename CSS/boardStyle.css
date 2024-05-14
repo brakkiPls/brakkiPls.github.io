@@ -12,6 +12,11 @@
     filter: opacity(70%);
     background-color: #94c1f5;
     border-radius: 1vh;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
   }
 
 .paulBox {
@@ -33,17 +38,15 @@ tbody tr:hover {
     text-shadow: #120542 1px 1px;
 }
 
-td {
-    overflow: hidden;
-}
-
 .redeemer:hover, .amount:hover, .max:hover, .total:hover, .average:hover{
     background-color: #123d7e77;
     color: white;
     text-shadow: #120542 1px 1px;
+    cursor: pointer;
 }
 
 #paultable {
+    border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
     text-align: center;
@@ -53,5 +56,9 @@ td {
     font-weight: 600;
     color: #120542;
     text-shadow: #2e9aff 1px 1px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
     user-select: none;
 }
