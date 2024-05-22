@@ -1,13 +1,8 @@
-const redeemer = document.getElementsByClassName("redeemer")
-redeemer.addEventListener("click", sortTable(0,0,'asc'))
-const amount = document.getElementsByClassName("amount")
-amount.addEventListener("click", sortTable(1,1,'desc'))
-const max = document.getElementsByClassName("max")
-max.addEventListener("click", sortTable(2,1,'desc'))
-const total = document.getElementsByClassName("total")
-total.addEventListener("click", sortTable(3,1,'desc'))
-const average = document.getElementsByClassName("average")
-average.addEventListener("click", sortTable(4,1,'desc'))
+document.querySelector(".redeemer").addEventListener("click", () => {sortTable(0,0,'asc')})
+document.querySelector(".amount").addEventListener("click", () => {sortTable(1,1,'desc')})
+document.querySelector(".max").addEventListener("click", () => {sortTable(2,1,'desc')})
+document.querySelector(".total").addEventListener("click", () => {sortTable(3,1,'desc')})
+document.querySelector(".average").addEventListener("click", () => {sortTable(4,1,'desc')})
 
 // n = column to sort, type = alphabetical or numerical
 function sortTable(n, type, dir) {

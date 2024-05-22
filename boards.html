@@ -18,29 +18,7 @@
 			<img src="Images/BGClouds.png" class="bg_clouds2">
 			<img src="Images/BGCity.png" class="bg_city">
 		</div>
-		<input type="text" id="searchbar" onkeyup="searchPaulTable()" placeholder="Search for a redeemer..">
-		<script>
-		function searchPaulTable() {
-			// Declare variables
-			var input, filter, table, tr, td, i, txtValue;
-			input = document.getElementById("searchbar");
-			filter = input.value.toUpperCase();
-			table = document.getElementById("paultable");
-			tr = table.getElementsByTagName("tr");
-		  
-			// Loop through all table rows, and hide those who don't match the search query
-			for (i = 0; i < tr.length; i++) {
-			  td = tr[i].getElementsByTagName("td")[0];
-			  if (td) {
-				txtValue = td.textContent || td.innerText;
-				if (txtValue.toUpperCase().indexOf(filter) > -1) {
-				  tr[i].style.display = "";
-				} else {
-				  tr[i].style.display = "none";
-				}
-			  }
-			}
-		  }</script>
+		<input type="text" id="searchbar" placeholder="Search for a redeemer..">
 		<div class="paulBox">
 			<table id="paultable">
 				<thead>
@@ -55,7 +33,10 @@
 				<tbody></tbody>
 			</table>
 		</div>
-		<script src="JS/sortPaulTable.js"></script>
+		<!-- create the paul table -->
 		<script type="text/javascript" src="JS/getPaulData.js"></script>
+		<!-- create event listener for searching and sorting -->
+		<script type="text/javascript" src="JS/searchPaulTable.js"></script>
+		<script type="text/javascript" src="JS/sortPaulTable.js"></script>
 	</body>
 </html>
