@@ -1,0 +1,89 @@
+.seasonalDrawings {
+    width: 500px;
+    background-color: rgb(116, 184, 247);
+    border-radius: 20px;
+    filter: opacity(70%);
+    margin: auto;
+    margin-right: 50%;
+}
+
+.samples {
+    display: flex;
+    height: 130px;
+    width: 500px;
+    position: fixed;
+    margin-left: 51%;
+    margin-top: 740px;
+}
+
+.paint {
+    margin-left: 40px;
+}
+
+.Flag:hover, .Heart:hover, .Sip:hover {
+    scale: 1.2;
+}
+
+.Text {
+    line-height: 23px;
+    text-align: center;
+    width: 500px;
+    color: lightblue;
+    text-shadow: #0b032b 2px 2px 10px;
+    padding: 15px;
+    font-family: sans-serif;
+    position: fixed;
+    margin-left: 50%;
+    margin-top: 50px;
+}
+
+.Caption {
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 0px;
+}
+
+.overlayText {
+    line-height: 23px;
+    text-align: center;
+    margin: auto;
+    color: 120542;
+    text-shadow: #2e9aff 2px 2px 2px;
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.underline {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .seasonalDrawings {
+        margin: auto;
+        margin-top: 25px;
+    }
+    .Text {
+        margin: auto;
+        position: relative;
+    }
+    .samples {
+        margin: auto;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Text {
+        width: 100%;
+        position: relative;
+    }
+    .Caption {
+        line-height: 60px;
+    }
+    .samples {
+        margin: auto;
+        position: relative;
+    }
+}
