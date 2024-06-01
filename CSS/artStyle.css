@@ -76,7 +76,7 @@
 
 @media only screen and (max-width: 500px) {
     .Text {
-        width: 100%;
+        /*width: 100%;*/
         position: relative;
     }
     .Caption {
