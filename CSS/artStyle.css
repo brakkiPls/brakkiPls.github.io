@@ -88,8 +88,8 @@
     }
 }
 
-@media only screen and (max-height: 890px) {
+/*@media only screen and (max-height: 890px) {
     .fixedContent {
         overflow-y: scroll;
     }
-}
+}*/
