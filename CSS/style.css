@@ -178,7 +178,7 @@ img, a, p, h1 {
     background-size: contain;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
-    background-color: black;
+    background-color: rgb(6, 3, 36);
   }
 
 @media only screen and (max-width: 930px) {
