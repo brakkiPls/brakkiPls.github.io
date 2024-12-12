@@ -2,6 +2,7 @@ body{
     overflow: hidden;
     animation: fadeInBdy 1s;
     background-color: #091624;
+    overflow-y: scroll;
 }
 
 @keyframes fadeInBdy {
@@ -148,5 +149,46 @@ img, a, p, h1 {
 @media only screen and (max-height: 860px) {
     body {
         overflow-y: visible;
+    }
+}
+
+.christmasmarket {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.cmimage {
+    overflow: hidden;
+}
+
+.cmimg {
+    max-width: 100%;
+}
+
+#fullpage {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+  }
+
+@media only screen and (max-width: 930px) {
+    .christmasmarket {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .christmasmarket {
+        grid-template-columns: auto;
     }
 }
