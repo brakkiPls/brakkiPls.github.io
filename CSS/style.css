@@ -2,7 +2,6 @@ body{
     overflow: hidden;
     animation: fadeInBdy 1s;
     background-color: #091624;
-    overflow-y: scroll;
 }
 
 @keyframes fadeInBdy {
