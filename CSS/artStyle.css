@@ -27,7 +27,7 @@
     margin-left: 65px;
 }
 
-.Flag:hover, .Heart:hover, .Sip:hover {
+.example_img:hover {
     scale: 1.1;
 }
 

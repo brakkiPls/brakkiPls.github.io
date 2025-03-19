@@ -9,7 +9,9 @@
 		<link rel="stylesheet" href="CSS/style.css">
 		<link rel="stylesheet" href="CSS/artStyle.css">
 	</head>
-	<body style="overflow-y: scroll;">
+	<body style="overflow-y: scroll;" onload="getCurrSeasonalDrawings()">
+		<script src="JS/seasonalDrawingSelector.js"></script>
+
 		<div class="bg">
 			<video autoplay muted loop class="bg_video">
 				<source src="Images/BG.mp4" type="video/mp4">
@@ -30,7 +32,7 @@
 				- chose painted or illustrated style (Sample below)<br>
 				- etc ...<br><br>
 				<i>You can not:</i><br><br>
-				- add a second character! (Normal comission prices apply for this)<br>
+				- add another character! (Normal comission prices apply for this)<br>
 				- change the main idea of the drawing<br><br>
 				Also: These Seasonal Drawings below are just Sketches!
 				The actual Art you Comission will be a lot higher quality. (Check out the Samples)<br><br>
@@ -46,28 +48,17 @@
 			</div>
 		</div>
 		<div class="seasonalDrawings">
-			<p class="overlayText"><strong class="underline">Seasonal Drawing (June) - Pride Flag</strong><br><br>
-				Show your Pride with a big flag! Make your Character carry a huge Pride Flag of your chosing.
-				What are they doing with that flag? Who knows maybe they Sleep in it like a blanket or use it like a glider?
-				It can be whatever you can think of when you chose to get this Seasonal Drawing.
-			</p>
-			<img src="Images/SeasonalArt/june_pride_flag.png" alt="Flag" class="Flag">
-			<p class="overlayText">----------------------------------------------------------------------------------------<br><br>
-				<strong class="underline">Seasonal Drawing (June) - Pride Heart</strong><br><br>
-				You love hugs? What about having your character hug a HUGE Pride Heart!
-				This Seasonal Drawing lets you do exactly that! Maybe you don't want to hug?
-				Maybe you want to use the Heart as a sleeping pillow, or hold it into the air to show everyone what your Heart is?
-				It's all up to your imagination!
-			</p>
-			<img src="Images/SeasonalArt/june_pride_heart.png" alt="Heart" class="Heart">
-			<p class="overlayText">----------------------------------------------------------------------------------------<br><br>
-				<strong class="underline">Seasonal Drawing (June) - Pride Sippies</strong><br><br>
-				Ever wanted to sip on some Gay Nectar? Maybe some Trans Tea, Bi Juice or even Non Binary Beverages.
-				Look no further! This Drawing will be of your Character sipping on a Punch of Pride.
-				Feel free to customize the drinking cup, the expression and the pose to whatever you want!
-				Maybe you want to raise a glass of Lesbian Liquor sassily; it's all up to you!
-			</p>
-			<img src="Images/SeasonalArt/june_pride_sip.png" alt="Sip" class="Sip">
+			<h1 class="overlayText underline" id="YCH1_hl"></h1>
+			<p class="overlayText" id="YCH1_desc"></p>
+			<img src="" class="example_img" id="YCH1_img">
+			<p class="overlayText">----------------------------------------------------------------------------------------</p>
+			<h1 class="overlayText underline" id="YCH2_hl"></h1>
+			<p class="overlayText" id="YCH2_desc"></p>
+			<img src="" class="example_img" id="YCH2_img">
+			<p class="overlayText">----------------------------------------------------------------------------------------</p>
+			<h1 class="overlayText underline" id="YCH3_hl"></h1>
+			<p class="overlayText" id="YCH3_desc"></p>
+			<img src="" class="example_img" id="YCH3_img">
 		</div>
 	</body>
 </html>
