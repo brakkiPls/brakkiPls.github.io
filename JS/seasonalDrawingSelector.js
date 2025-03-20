@@ -1,3 +1,7 @@
+//const today = new Date()
+//var month = today.getMonth();
+var month = 5;
+
 function getCurrSeasonalDrawings () {
 
     const hl1 = [
@@ -134,23 +138,31 @@ function getCurrSeasonalDrawings () {
         "",
     ];
 
-    //const today = new Date()
-    //let drawing = today.getMonth();
-    // console.log(drawing)
-    let drawing = 5;
+    document.getElementById("YCH1_hl").innerHTML = hl1[month];
+    document.getElementById("YCH1_desc").innerHTML = desc1[month];
+    document.getElementById("YCH1_img").src = "Images/SeasonalArt/" + month + "_1_0.png"
 
-    document.getElementById("YCH1_hl").innerHTML = hl1[drawing];
-    document.getElementById("YCH1_desc").innerHTML = desc1[drawing];
-    document.getElementById("YCH1_img").src = "Images/SeasonalArt/" + drawing + "_1_0.png"
-    console.log(hl1[drawing] + "\n" + desc1[drawing] + "\n" + "Images/SeasonalArt/" + drawing + "_1_0.png")
-
-    document.getElementById("YCH2_hl").innerHTML = hl2[drawing];
-    document.getElementById("YCH2_desc").innerHTML = desc2[drawing];
-    document.getElementById("YCH2_img").src = "Images/SeasonalArt/" + drawing + "_2_0.png"
-    console.log(hl2[drawing] + "\n" + desc2[drawing] + "\n" + "Images/SeasonalArt/" + drawing + "_2_0.png")
+    document.getElementById("YCH2_hl").innerHTML = hl2[month];
+    document.getElementById("YCH2_desc").innerHTML = desc2[month];
+    document.getElementById("YCH2_img").src = "Images/SeasonalArt/" + month + "_2_0.png"
     
-    document.getElementById("YCH3_hl").innerHTML = hl3[drawing];
-    document.getElementById("YCH3_desc").innerHTML = desc3[drawing];
-    document.getElementById("YCH3_img").src = "Images/SeasonalArt/" + drawing + "_3_0.png"
-    console.log(hl3[drawing] + "\n" + desc3[drawing] + "\n" + "Images/SeasonalArt/" + drawing + "_3_0.png")
+    document.getElementById("YCH3_hl").innerHTML = hl3[month];
+    document.getElementById("YCH3_desc").innerHTML = desc3[month];
+    document.getElementById("YCH3_img").src = "Images/SeasonalArt/" + month + "_3_0.png"
+
+    const images = [
+        "_1_1.png","_1_2.png","_1_0.png","_1_3.png","_1_4.png",
+        "_2_1.png","_2_2.png","_2_0.png","_2_3.png","_2_4.png",
+        "_3_1.png","_3_2.png","_3_0.png","_3_3.png","_3_4.png",
+    ]
+    
+    let exapmleSources = document.getElementsByClassName("example_img")
+
+    for (var i = 0; i<exapmleSources.length; i++) {
+        exapmleSources[i].src = "Images/SeasonalArt/" + month + images[i]
+    }
+    
+    document.getElementById("img1_3").style.scale = 1.3
+    document.getElementById("img2_3").style.scale = 1.3
+    document.getElementById("img3_3").style.scale = 1.3
 }

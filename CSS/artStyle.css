@@ -1,3 +1,42 @@
+button {
+    background-color: darkblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    filter: opacity(30%);
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 20px;
+}
+
+#button_r {
+    margin-left: 430px;
+}
+
+button:hover {
+    filter: opacity(70%);
+    scale: 1.1;
+}
+
+.examples {
+    width: 500px;
+    position: absolute;
+    display: flex;
+    margin-top: -50px;
+}
+
+.example_img {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(191, 219, 245);
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    outline: darkblue solid 1px;
+}
+
 .fixedContent {
     position: fixed;
     margin-left: 50%;
@@ -6,8 +45,8 @@
 .seasonalDrawings {
     width: 500px;
     background-color: rgb(116, 184, 247);
-    border-radius: 20px;
     filter: opacity(70%);
+    border-radius: 20px;
     margin: auto;
     margin-right: 50%;
 }
@@ -27,7 +66,12 @@
     margin-left: 65px;
 }
 
-.example_img:hover {
+.template_img {
+    width: 500px;
+    height: 500px;
+}
+
+.template_img:hover {
     scale: 1.1;
 }
 
