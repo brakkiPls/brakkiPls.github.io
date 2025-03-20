@@ -104,7 +104,7 @@ button:hover {
 
 .underline {
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 1000px) {
