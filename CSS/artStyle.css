@@ -75,8 +75,8 @@ button:hover {
     align-items: center;
     text-align: center;
     color: lightblue;
-    text-shadow: #0b032b 2px 2px 10px;
-    font-family: sans-serif;
+    text-shadow: #d8d4e7 2px 2px 10px;
+    font-family: cursive;
 }
 
 .template_img {
@@ -93,8 +93,8 @@ button:hover {
     text-align: center;
     width: 500px;
     color: lightblue;
-    text-shadow: #0b032b 2px 2px 10px;
-    font-family: sans-serif;
+    text-shadow: #000000 2px 2px 2px;
+    font-family: cursive;
     margin-top: 10px;
 }
 
@@ -117,9 +117,9 @@ button:hover {
     text-align: center;
     margin: auto;
     color: 120542;
-    text-shadow: #2e9aff 2px 2px 2px;
+    text-shadow: #2789e6 2px 2px 2px;
     padding: 15px;
-    font-family: sans-serif;
+    font-family: cursive;
     font-weight: 600;
 }
 
