@@ -44,6 +44,9 @@ button:hover {
 .fixedContent {
     position: fixed;
     margin-left: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
 
 .seasonalDrawings {
@@ -95,6 +98,14 @@ button:hover {
     margin-top: 10px;
 }
 
+.green {
+    color: lightgreen;
+}
+
+.red {
+    color: lightcoral;
+}
+
 .Caption {
     font-size: 50px;
     text-decoration: underline;
@@ -125,6 +136,9 @@ button:hover {
     .samples, .fixedContent, .Text {
         margin: auto;
         position: relative;
+    }
+    .fixedContent {
+        overflow: hidden;
     }
 }
 
@@ -159,12 +173,5 @@ button:hover {
         margin-left: 0px;
         position: absolute;
         right: 20px;
-    }
-}
-
-@media only screen and (max-height: 890px) {
-    .fixedContent {
-        height: 100%;
-        overflow-y: scroll;
     }
 }

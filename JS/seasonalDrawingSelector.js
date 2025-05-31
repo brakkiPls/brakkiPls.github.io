@@ -31,7 +31,7 @@ function getCurrSeasonalDrawings () {
         //may
         "",
         //jun
-        "Show your Pride with a big flag! Make your Character carry a huge Pride Flag of your chosing." +
+        "Show your Pride with a big flag! Make your Character carry a huge Pride Flag of your choosing." +
 		"What are they doing with that flag? Who knows maybe they Sleep in it like a blanket or use it like a glider?" +
 		"It can be whatever you can think of when you chose to get this Seasonal Drawing.",
         //jul
