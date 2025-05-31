@@ -3,6 +3,14 @@
     grid-template-columns: 50px 350px 50px;
 }
 
+.littleBigger {
+    font-size: 16px;
+}
+
+.empty {
+    height: 20px;
+}
+
 button {
     background-color: darkblue;
     border-radius: 50%;
@@ -59,10 +67,11 @@ button:hover {
 }
 
 .samples {
-    margin-top: -40px;
+    margin-top: -20px;
     width: 500px;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 50px;
 }
 
 .box {
@@ -72,7 +81,6 @@ button:hover {
     font-size:20px;
     margin: auto;
     justify-content: center;
-    align-items: center;
     text-align: center;
     color: lightblue;
     text-shadow: #d8d4e7 2px 2px 10px;
@@ -85,7 +93,7 @@ button:hover {
 }
 
 .template_img:hover, .example_img:hover {
-    scale: 1.2;
+    scale: 1.1;
 }
 
 .Text {
@@ -95,7 +103,6 @@ button:hover {
     color: lightblue;
     text-shadow: #000000 2px 2px 2px;
     font-family: cursive;
-    margin-top: 10px;
 }
 
 .green {
@@ -107,9 +114,9 @@ button:hover {
 }
 
 .Caption {
+    margin-top: 10px;
     font-size: 50px;
     text-decoration: underline;
-    margin-top: 10px;
 }
 
 .overlayText {
@@ -131,7 +138,6 @@ button:hover {
 @media only screen and (max-width: 1040px) {
     .seasonalDrawings {
         margin: auto;
-        margin-top: 25px;
     }
     .samples, .fixedContent, .Text {
         margin: auto;

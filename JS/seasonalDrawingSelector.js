@@ -32,8 +32,8 @@ function getCurrSeasonalDrawings () {
         "",
         //jun
         "Show your Pride with a big flag! Make your Character carry a huge Pride Flag of your choosing." +
-		"What are they doing with that flag? Who knows maybe they Sleep in it like a blanket or use it like a glider?" +
-		"It can be whatever you can think of when you chose to get this Seasonal Drawing.",
+		" What are they doing with that flag? Who knows maybe they Sleep in it like a blanket or use it like a glider?" +
+		" It can be whatever you can think of when you chose to get this Seasonal Drawing.",
         //jul
         "",
         //aug
@@ -76,9 +76,9 @@ function getCurrSeasonalDrawings () {
         "",
         //jun
         "You love hugs? What about having your character hug a HUGE Pride Heart!" +
-		"This Seasonal Drawing lets you do exactly that! Maybe you don't want to hug?" +
-		"Maybe you want to use the Heart as a sleeping pillow, or hold it into the air to show everyone what your Heart is?" +
-		"It's all up to your imagination!",
+		" This Seasonal Drawing lets you do exactly that! Maybe you don't want to hug?" +
+		" Maybe you want to use the Heart as a sleeping pillow, or hold it into the air to show everyone what your Heart is?" +
+		" It's all up to your imagination!",
         //jul
         "",
         //aug
@@ -121,9 +121,9 @@ function getCurrSeasonalDrawings () {
         "",
         //jun
         "Ever wanted to sip on some Gay Nectar? Maybe some Trans Tea, Bi Juice or even Non Binary Beverages." +
-		"Look no further! This Drawing will be of your Character sipping on a Punch of Pride." +
-		"Feel free to customize the drinking cup, the expression and the pose to whatever you want!" +
-		"Maybe you want to raise a glass of Lesbian Liquor sassily; it's all up to you!",
+		" Look no further! This Drawing will be of your Character sipping on a Punch of Pride." +
+		" Feel free to customize the drinking cup, the expression and the pose to whatever you want!" +
+		" Maybe you want to raise a glass of Lesbian Liquor sassily; it's all up to you!",
         //jul
         "",
         //aug
