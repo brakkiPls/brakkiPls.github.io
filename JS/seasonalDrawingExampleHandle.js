@@ -26,7 +26,7 @@ function prevPicture(offer) {
 function setNewStuff(offer, newSelected, prevSelected) {
 
     document.getElementById("img" + offer + "_" + newSelected).style.scale = 1.3
-    document.getElementById("img" + offer + "_" + prevSelected).style.scale = 1
+    document.getElementById("img" + offer + "_" + prevSelected).style.scale = 1.0
     
     const images = [
         "_1_1.png","_1_2.png","_1_0.png","_1_3.png","_1_4.png",
@@ -35,4 +35,13 @@ function setNewStuff(offer, newSelected, prevSelected) {
     ]
 
     document.getElementById("YCH" + offer + "_img").src = "Images/SeasonalArt/" + month + images[(offer-1)*5 + (newSelected-1)]
+}
+
+function selectPicture(newNum, newID) {
+    
+    if (!(newID==current[newNum-1])) {
+
+        setNewStuff(newNum, newID, current[newNum-1])
+        current[newNum-1] = newID
+    }
 }
