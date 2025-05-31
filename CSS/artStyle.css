@@ -113,7 +113,12 @@ button:hover {
     color: lightcoral;
 }
 
+.special {
+    color: rgb(255, 255, 225);
+}
+
 .Caption {
+    margin-top: 10px;
     font-size: 50px;
     text-decoration: underline;
 }
