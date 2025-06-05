@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BM - Art</title>
+		<link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="stylesheet" href="CSS/commStyle.css">
+	</head>
+	<body style="overflow-y: scroll;">
+		<div class="bg">
+			<video autoplay muted loop class="bg_video">
+				<source src="Images/BG.mp4" type="video/mp4">
+			</video>
+			<img src="Images/BGClouds.png" class="bg_clouds">
+			<img src="Images/BGClouds.png" class="bg_clouds2">
+			<img src="Images/BGCity.png" class="bg_city">
+		</div>
+
+		<h1 class="Text , Caption">Brakki Commissions!</h1>
+		<div class="mainBox">
+			<div class="sideL">
+				<img src="Images/brakkiFly.gif" alt="Fly" class="emote" id="fly">
+				<img src="Images/Brammies.gif" alt="Dance" class="emote" id="dance">
+			</div>
+			<p class="Text">
+				<strong>Looks like you are curious about what i am offering?<br>
+					Looks like you are curious about what i am offering?<br>
+					Looks like you are curious about what i am offering?<br>
+					Looks like you are curious about what i am offering?<br>
+					Looks like you are curious about what i am offering?<br>
+					Looks like you are curious about what i am offering?<br>
+					Looks like you are curious about what i am offering?<br>
+					<a href="tos.html" id="linkHide">contact</a>!<br>
+				</strong>
+			</p>
+			<div class="sideR">
+				<img src="Images/brakkiSlurpOptimized.gif" alt="Slurp" class="emote" id="slurp">
+				<img src="Images/RawrInCar.gif" alt="Car" class="emote" id="car">
+			</div>
+		</div>
+
+		<div class="mainBox2">
+			<div class="Text2" onclick="changeBody('emotes', 'artworks')">
+				<img src="Images/SampleArt/cuddle.png" alt="Cuddle" id="buttonIMG">
+				<p id="buttonCap">Emotes</p>
+			</div>
+			<div class="Text2" onclick="changeBody('artworks', 'emotes')">
+				<img src="Images/SampleArt/cuddle.png" alt="Cuddle" id="buttonIMG">
+				<p id="buttonCap">Artworks</p>
+			</div>
+			<div class="Text2">
+				<a href="art.html" id="linkHide">
+					<img src="Images/SampleArt/cuddle.png" alt="Cuddle" id="buttonIMG">
+					<p id="buttonCap2">Seasonal<br>Drawings</p>
+				</a>
+			</div>
+		</div>
+
+		<script src="JS/switchDisplay.js"></script>
+		<div class="bigBox"></div>
+		<div id="emotes">
+			<p class="Text3"><strong>
+				- 20$ per emote<br><br>
+				
+				- +30$ to vector animate it (50 if both)<br>
+				- +3$ per frame to frame animate<br><br>
+
+				- emote calculator<br>
+				<i>- say how many</i><br>
+				<i>-> chose which ones are animated</i><br>
+				<i>-> chose which ones are new animated</i><br>
+				<i>-> generates link for me to see what they got</i><br><br>
+				- show examples with what they are (frame animated + frames/ vector animated, etc)<br>
+				check out <a href="tos.html" id="linkHide">tos</a>!<br><br>
+				(make ID leading here)
+			</strong></p>
+		</div>
+		<div id="artworks">
+			<p class="Text3"><strong>
+				illustrated:<br>
+				- 30$ for sketch<br>
+				- +15$ for lines/flat color<br><br>
+
+				painted:<br>
+				- 45$ for sketch<br><br>
+
+				combined:<br>
+				- +15$ for shading<br>
+				- +30$ per character<br>
+				- +15$ complex background<br>
+				- +15$ for nsfw<br><br>
+			
+				- comission thing<br>
+				<i>- checkboxes for individual options</i><br>
+				<i>-> dynamically updates preview image</i><br>
+				<i>-> dynamically update price</i><br>
+				<i>-> generates link for me to see what they got</i><br><br>
+				- show examples with what they are (sketch, lines, ...)<br>
+				check out <a href="tos.html" id="linkHide">tos</a>!<br><br>
+				(make ID leading here)
+			</strong></p>
+		</div>
+	</body>
+</html>

@@ -143,12 +143,15 @@ button:hover {
     .seasonalDrawings {
         margin: auto;
     }
+
+    .Caption {
+        line-height: 30px;
+    }
+
     .samples, .fixedContent, .Text {
         margin: auto;
         position: relative;
-    }
-    .fixedContent {
-        overflow: hidden;
+        margin-top: 20px;
     }
 }
 
@@ -157,9 +160,11 @@ button:hover {
         /*width: 100%;*/
         position: relative;
     }
+
     .Caption {
         line-height: 60px;
     }
+
     .samples, .fixedContent {
         margin: auto;
         position: relative;

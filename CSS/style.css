@@ -151,21 +151,6 @@ img, a, p, h1 {
     }
 }
 
-.christmasmarket {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-}
-
-.cmimage {
-    overflow: hidden;
-}
-
-.cmimg {
-    max-width: 100%;
-}
-
 #fullpage {
     display: none;
     position: fixed;
@@ -180,14 +165,6 @@ img, a, p, h1 {
     background-color: rgb(6, 3, 36);
   }
 
-@media only screen and (max-width: 930px) {
-    .christmasmarket {
-        grid-template-columns: auto auto;
-    }
-}
-
-@media only screen and (max-width: 620px) {
-    .christmasmarket {
-        grid-template-columns: auto;
-    }
+#linkHide {
+    text-decoration: none;
 }

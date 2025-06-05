@@ -1,0 +1,15 @@
+.Text {
+    text-align: center;
+    color: lightblue;
+    text-shadow: #000000 2px 2px 2px;
+    font-family: cursive;
+    font-size: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.Caption {
+    font-size: 50px;
+    text-decoration: underline;
+    color: #7be61e;
+}

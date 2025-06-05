@@ -1,0 +1,146 @@
+.mainBox, .mainBox2 {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mainBox2 {
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.Text {
+    max-height: 450px;
+}
+
+.Text, .Text2, .Text3 {
+    text-align: center;
+    color: lightblue;
+    text-shadow: #000000 2px 2px 2px;
+    font-family: cursive;
+    font-size: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.Text2 {
+    max-width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    outline: solid 5px #120542;
+    box-shadow: 10px 5px 5px #120542;
+}
+
+.Text2:hover {
+    scale: 1.1;
+}
+
+.Text3 {
+    color: rgb(231, 249, 255);
+    text-shadow: #000000 2px 2px 1px;
+    overflow-y: auto;
+    height: 1000px;
+}
+
+#linkHide {
+    color: lightgreen;
+}
+
+.Caption {
+    font-size: 50px;
+    text-decoration: underline;
+    color: #7be61e;
+}
+
+.special {
+    color: rgb(255, 255, 225);
+}
+
+.sideL, .sideR {
+    width: 128px;
+    display: grid;
+    row-gap: 30%;
+    height: 400px;
+}
+
+.sideL {
+    padding-left: 72px;
+}
+
+.sideR {
+    padding-right: 72px;
+}
+
+#fly {
+    margin-left: -72px;
+}
+
+#car {
+    width: 200px;
+}
+
+#buttonCap, #buttonCap2 {
+    margin-top: -185px;
+    align-self: center;
+    color: #05195e;
+    text-shadow: #a4aaff 2px 2px 5px;
+    font-size: 60px;
+}
+
+#buttonCap2 {
+    margin-top: -225px;
+}
+
+#buttonIMG {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.bigBox {
+    max-width: 1100px;
+    margin: auto;
+    height: 1000px;
+    opacity: 25%;
+    border-radius: 30px;
+    background-color: #aabbe0;
+    box-shadow: 10px 5px 5px #120542;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+#emotes, #artworks {
+    margin-top: -1000px;
+}
+
+#emotes {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .emote, #car {
+        width: 112px;
+    }
+    #fly {
+        margin-left: 0px;
+    }
+    .sideL {
+        padding-left: 0px;
+    }
+    .sideR {
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .emote, #car {
+        width: 20vw;
+    }
+    .Text {
+        overflow: hidden;
+    }
+}
