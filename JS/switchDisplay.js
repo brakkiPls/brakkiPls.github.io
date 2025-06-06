@@ -59,6 +59,7 @@ function setTransition (target) {
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
+console.log(page)
 
 switch (page) {
     case 'comms.html':
