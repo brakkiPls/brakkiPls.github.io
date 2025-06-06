@@ -1,5 +1,4 @@
 body{
-    overflow: auto;
     animation: fadeInBdy 1s;
     background-color: #091624;
 }
@@ -12,7 +11,7 @@ body{
         background-color: #093561;
     }
 }
-img, a, p, h1 {
+img, a, p, h1, h2, h3, h4, h5 {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
