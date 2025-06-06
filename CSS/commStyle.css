@@ -32,11 +32,7 @@
     border-radius: 20px;
     overflow: hidden;
     outline: solid 5px #120542;
-    box-shadow: 10px 5px 5px #120542;
-}
-
-.Text2:hover {
-    scale: 1.1;
+    box-shadow: 10px 5px 5px #a4aaff49;
 }
 
 .Text3 {
@@ -46,7 +42,7 @@
     height: 1000px;
 }
 
-#linkHide {
+.linkHide {
     color: lightgreen;
 }
 
@@ -117,7 +113,7 @@
     margin-top: -1000px;
 }
 
-#emotes {
+#artworks {
     display: none;
 }
 

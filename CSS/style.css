@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    overflow: auto;
     animation: fadeInBdy 1s;
     background-color: #091624;
 }
@@ -91,66 +91,6 @@ img, a, p, h1 {
     height: 100%;
 }
 
-@media only screen and (max-width: 480px) {
-    .main_box, .title, .logo, .bg_box, .socials, .circle, .quoteBox {
-        width: 100%;
-    }
-
-    .twitch, .discord {
-        margin-top: -100px;
-    }
-    .kofi {
-        margin-right: 76%;
-    }
-    .twitch {
-        margin-right: 38%;
-    }
-    .discord {
-        margin-left: 38%;
-    }
-    .github {
-        margin-left: 76%;
-    }
-
-    .projects, .art, .boards, .shop, .quotes, .docs {
-        scale: 0.3;
-    }
-    .quotes:hover, .art:hover, .projects:hover, .shop:hover, .docs:hover, .boards:hover {
-        scale: 0.35;
-    }
-    .projects, .art {
-        margin-top: -300px;
-    }
-    .boards, .shop {
-        margin-top: -30px;
-    }
-    .quotes, .docs {
-        margin-top: 230px;
-    }
-    .art, .docs {
-        margin-left: -30%;
-    }
-    .projects, .quotes {
-        margin-left: 30%;
-    }
-    .shop {
-        margin-left: -58%;
-    }
-    .boards {
-        margin-left: 58%;
-    }
-    .art {
-        /*This still has to be fixed*/
-        mask: none;
-    }
-}
-
-@media only screen and (max-height: 860px) {
-    body {
-        overflow-y: visible;
-    }
-}
-
 #fullpage {
     display: none;
     position: fixed;
@@ -165,6 +105,6 @@ img, a, p, h1 {
     background-color: rgb(6, 3, 36);
   }
 
-#linkHide {
+.linkHide {
     text-decoration: none;
 }

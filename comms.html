@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="CSS/style.css">
 		<link rel="stylesheet" href="CSS/commStyle.css">
 	</head>
-	<body style="overflow-y: scroll;">
+	<body>
 		<div class="bg">
 			<video autoplay muted loop class="bg_video">
 				<source src="Images/BG.mp4" type="video/mp4">
@@ -33,7 +33,7 @@
 					Looks like you are curious about what i am offering?<br>
 					Looks like you are curious about what i am offering?<br>
 					Looks like you are curious about what i am offering?<br>
-					<a href="tos.html" id="linkHide">contact</a>!<br>
+					<a href="tos.html" class="linkHide">contact</a>!<br>
 				</strong>
 			</p>
 			<div class="sideR">
@@ -43,16 +43,16 @@
 		</div>
 
 		<div class="mainBox2">
-			<div class="Text2" onclick="changeBody('emotes', 'artworks')">
+			<div class="Text2" onclick="changeBody('emotes', 'artworks')" id="emoteButton">
 				<img src="Images/SampleArt/cuddle.png" alt="Cuddle" id="buttonIMG">
 				<p id="buttonCap">Emotes</p>
 			</div>
-			<div class="Text2" onclick="changeBody('artworks', 'emotes')">
+			<div class="Text2" onclick="changeBody('artworks', 'emotes')" id="artworkButton">
 				<img src="Images/SampleArt/cuddle.png" alt="Cuddle" id="buttonIMG">
 				<p id="buttonCap">Artworks</p>
 			</div>
-			<div class="Text2">
-				<a href="art.html" id="linkHide">
+			<div class="Text2" id="drawingButton">
+				<a href="art.html" class="linkHide">
 					<img src="Images/SampleArt/cuddle.png" alt="Cuddle" id="buttonIMG">
 					<p id="buttonCap2">Seasonal<br>Drawings</p>
 				</a>
@@ -74,7 +74,7 @@
 				<i>-> chose which ones are new animated</i><br>
 				<i>-> generates link for me to see what they got</i><br><br>
 				- show examples with what they are (frame animated + frames/ vector animated, etc)<br>
-				check out <a href="tos.html" id="linkHide">tos</a>!<br><br>
+				check out <a href="tos.html" class="linkHide">tos</a>!<br><br>
 				(make ID leading here)
 			</strong></p>
 		</div>
@@ -99,7 +99,7 @@
 				<i>-> dynamically update price</i><br>
 				<i>-> generates link for me to see what they got</i><br><br>
 				- show examples with what they are (sketch, lines, ...)<br>
-				check out <a href="tos.html" id="linkHide">tos</a>!<br><br>
+				check out <a href="tos.html" class="linkHide">tos</a>!<br><br>
 				(make ID leading here)
 			</strong></p>
 		</div>

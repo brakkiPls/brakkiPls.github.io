@@ -110,17 +110,17 @@
     transition-duration: 0.25s;
 }
 
-.quotes:hover, .art:hover, .projects:hover, .shop:hover, .docs:hover, .boards:hover {
+#quotes:hover, #art:hover, #projects:hover, #shop:hover, #docs:hover, #boards:hover {
     scale: 0.4;
     z-index: 5;
 }
 
-.quotes, .art, .projects, .shop, .docs, .boards {
+#quotes, #art, #projects, #shop, #docs, #boards {
     position: absolute;
     scale: 0.35;
 }
 
-.art {
+#art {
     margin-top: -280px;
     margin-left: -150px;
     animation: fadeInArt 0.5s;
@@ -129,7 +129,7 @@
     mask-composite: subtract;
 }
 
-.art:hover {
+#art:hover {
     animation: chill 2s ease-out infinite, fadeInArt 0.5s;
     mask: none;
 }
@@ -154,13 +154,13 @@
     
 }
 
-.projects {
+#projects {
     margin-top: -280px;
     margin-left: 150px;
     animation: fadeInProjects 0.5s;
 }
 
-.projects:hover {
+#projects:hover {
     animation: hammer 1.5s linear infinite, fadeInProjects 0.5s;
 }
 
@@ -186,12 +186,12 @@
     }
 }
 
-.shop {
+#shop {
     margin-left: -300px;
     animation: fadeInShop 0.5s;
 }
 
-.shop:hover {
+#shop:hover {
     animation: fall 3s ease-in infinite, fadeInShop 0.5s;
 }
 
@@ -214,12 +214,12 @@
     }
 }
 
-.boards {
+#boards {
     margin-left: 300px;
     animation: fadeInBoards 0.5s;
 }
 
-.boards:hover {
+#boards:hover {
     animation: wiggle 1s linear infinite, fadeInBoards 0.5s;
 }
 
@@ -248,13 +248,13 @@
     }
 }
 
-.docs{
+#docs{
     margin-top: 280px;
     margin-left: -150px;
     animation: fadeInDocs 0.5s;
 }
 
-.docs:hover {
+#docs:hover {
     animation: rotate 3s linear infinite, fadeInDocs 0.5s;
 }
 
@@ -274,13 +274,13 @@
     }
 }
 
-.quotes {
+#quotes {
     margin-top: 280px;
     margin-left: 150px;
     animation: fadeInQuotes 0.5s;
 }
 
-.quotes:hover {
+#quotes:hover {
     animation: rawr 0.5s ease-in-out infinite, fadeInQuotes 0.5s;
 }
 
@@ -314,47 +314,47 @@
     animation: fadeInBG 1s;
 }
 
-.twitch:hover, .kofi:hover, .youtube:hover, .github:hover, .discord:hover {
+#twitch:hover, #kofi:hover, #youtube:hover, #github:hover, #discord:hover {
     scale: 0.25;
     border-radius: 300px;
     z-index: 5;
 }
 
-.twitch:hover {
+#twitch:hover {
     box-shadow: 10px 10px 100px 50px #6441A5;
     background-color: #6441A5;
 }
 
-.kofi:hover {
+#kofi:hover {
     box-shadow: 10px 10px 100px 50px #13C3FF;
     background-color: #13C3FF;
 }
 
-.youtube:hover {
+#youtube:hover {
     box-shadow: 10px 10px 100px 50px #FF0000;
     background-color: #FF0000;
 }
 
-.github:hover {
+#github:hover {
     box-shadow: 10px 10px 100px 50px #333;
     background-color: #333;
 }
 
-.discord:hover{
+#discord:hover{
     box-shadow: 10px 10px 100px 50px #5865F2;
     background-color: #5865F2;
 }
 
-.kofi, .youtube, .github, .discord, .twitch {
+#kofi, #youtube, #github, #discord, #twitch {
     position: absolute;
     scale: 0.2;
 }
 
-.twitch, .discord {
+#twitch, #discord {
     margin-top: -20px;
 }
 
-.kofi{
+#kofi{
     margin-right: 400px;
     animation: fadeInKofi 0.5s;
 }
@@ -365,7 +365,7 @@
     }
 }
 
-.twitch {
+#twitch {
     margin-right: 200px;
     animation: fadeInTwitch 0.5s;
 }
@@ -377,7 +377,7 @@
     }
 }
 
-.youtube {
+#youtube {
     animation: fadeInYoutube 0.5s;
 }
 
@@ -387,7 +387,7 @@
     }
 }
 
-.discord {
+#discord {
     margin-left: 200px;
     animation: fadeInDiscord 0.5s;
 }
@@ -399,7 +399,7 @@
     }
 }
 
-.github {
+#github {
     margin-left: 400px;
     animation: fadeInGithub 0.5s;
 }
@@ -407,5 +407,59 @@
 @keyframes fadeInGithub {
     from {
         margin-left: 500px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main_box, .title, .logo, .bg_box, .socials, .circle, .quoteBox {
+        width: 100%;
+    }
+
+    #twitch, #discord {
+        margin-top: -100px;
+    }
+    #kofi {
+        margin-right: 76%;
+    }
+    #twitch {
+        margin-right: 38%;
+    }
+    #discord {
+        margin-left: 38%;
+    }
+    #github {
+        margin-left: 76%;
+    }
+
+    #projects, #art, #boards, #shop, #quotes, #docs {
+        scale: 0.3;
+    }
+    #quotes:hover, #art:hover, #projects:hover, #shop:hover, #docs:hover, #boards:hover {
+        scale: 0.35;
+    }
+    #projects, #art {
+        margin-top: -300px;
+    }
+    #boards, #shop {
+        margin-top: -30px;
+    }
+    #quotes, #docs {
+        margin-top: 230px;
+    }
+    #art, #docs {
+        margin-left: -30%;
+    }
+    #projects, #quotes {
+        margin-left: 30%;
+    }
+    #shop {
+        margin-left: -58%;
+    }
+    #boards {
+        margin-left: 58%;
+    }
+    #art {
+        /*This still has to be fixed*/
+        mask: none;
     }
 }
