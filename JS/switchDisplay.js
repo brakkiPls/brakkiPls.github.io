@@ -59,7 +59,6 @@ function setTransition (target) {
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
-console.log(page)
 
 switch (page) {
     case 'comms.html':
@@ -72,6 +71,7 @@ switch (page) {
         break;
 
     case 'index.html':
+    case '':
         settings.max = 10;
         settings.scale = 1.1;
         settings.initScalecale = 1;
