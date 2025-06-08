@@ -83,7 +83,7 @@
     margin-top: -185px;
     align-self: center;
     color: #05195e;
-    text-shadow: #a4aaff 2px 2px 5px;
+  text-shadow: -1px -1px 5px #c6e8ff, 1px -1px 5px #c6e8ff, -1px 1px 5px #c6e8ff, 1px 1px 5px #c6e8ff;
     font-size: 60px;
 }
 
@@ -95,6 +95,7 @@
     width: 300px;
     height: 250px;
     object-fit: cover;
+    background-color: #c6e8ff;
 }
 
 .bigBox {

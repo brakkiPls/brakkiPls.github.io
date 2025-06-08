@@ -166,3 +166,9 @@ function getCurrSeasonalDrawings () {
     document.getElementById("img2_3").style.scale = 1.3
     document.getElementById("img3_3").style.scale = 1.3
 }
+
+function loadButtonIcon() {
+    let rand = Math.floor(Math.random() * 3) + 1;
+    let button = document.querySelector(".seasonal")
+    button.src = "Images/SeasonalArt/" + month + "_" + rand + "_0.png"
+}
