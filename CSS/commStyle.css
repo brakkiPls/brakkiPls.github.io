@@ -40,6 +40,7 @@
     text-shadow: #000000 2px 2px 1px;
     overflow-y: auto;
     height: 1000px;
+    max-width: 600px;
 }
 
 .linkHide {
@@ -83,7 +84,7 @@
     margin-top: -185px;
     align-self: center;
     color: #05195e;
-  text-shadow: -1px -1px 5px #c6e8ff, 1px -1px 5px #c6e8ff, -1px 1px 5px #c6e8ff, 1px 1px 5px #c6e8ff;
+    text-shadow: -1px -1px 5px #c6e8ff, 1px -1px 5px #c6e8ff, -1px 1px 5px #c6e8ff, 1px 1px 5px #c6e8ff;
     font-size: 60px;
 }
 
@@ -140,4 +141,17 @@
     .Text {
         overflow: hidden;
     }
+}
+
+/*Emote comission helper*/
+.ex_animType {
+    height: 24px;
+    width: 55px;
+    display: none;
+}
+
+.ex_frameCount {
+    max-width: 40px;
+    text-align: center;
+    display: none;
 }

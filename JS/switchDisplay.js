@@ -64,7 +64,7 @@ switch (page) {
     case 'comms.html':
         settings.max = 1;
         settings.scale = 1.1;
-        settings.initScalecale = 1;
+        settings.initScale = 1;
         buttonMove('emoteButton');
         buttonMove('artworkButton');
         buttonMove('drawingButton');
@@ -74,7 +74,7 @@ switch (page) {
     case '':
         settings.max = 10;
         settings.scale = 1.1;
-        settings.initScalecale = 1;
+        settings.initScale = 1;
         buttonMove('kofi');
         buttonMove('twitch');
         buttonMove('youtube');
