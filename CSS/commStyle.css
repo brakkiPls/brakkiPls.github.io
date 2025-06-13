@@ -147,11 +147,11 @@
 .ex_animType {
     height: 24px;
     width: 55px;
-    display: none;
+    visibility: hidden;
 }
 
 .ex_frameCount {
     max-width: 40px;
     text-align: center;
-    display: none;
+    visibility: hidden;
 }

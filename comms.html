@@ -65,40 +65,29 @@
 		<div class="bigBox"></div>
 		<div id="emotes">
 			<p class="Text3"><strong>
-				- 20$ per emote<br>
-				- 10% discount total if 5+<br><br>
-				
-				- +30$ to vector animate it (50 if both)<br>
-				- +3$ per frame to frame animate<br><br>
-
 				- emote calculator<br>
-				<i>- say how many</i><br>
-				<i>-> chose which ones are animated</i><br>
 				<i>-> chose which ones are new animated</i><br>
+				<i>-> update total on frame count update</i><br>
 				<i>-> generates link for me to see what they got</i><br><br>
 				- show examples with what they are (frame animated + frames/ vector animated, etc)<br>
 				check out <a href="tos.html" class="linkHide">tos</a>!<br><br>
 				(make ID leading here)<br><br>
 
-				How many Emotes would you like?<br>
-				<input type="number" min="1" max="20" value="1">
-				<button>Go!</button><br><br>
+				<strong class="emote_calculator">
+					How many Emotes would you like?<br>
+					<input type="number" min="1" max="20" value="1" id="ex_input">
+					<button onclick="emote_drawSettings(false)">Go!</button><br><br>
 
-				<script src="JS/CommissionHelper.js"></script>
-				<strong class="ex">
-					Emote 1: Animated? <button class="ex_anim" onclick="emote_isAnimated(this)">❌</button>
-					<!--activate when animated-->
-					<button class="ex_animType ex1.1">Frame</button>
-					<!--activate when Frame-->
-					<input type="number" min="2" max="99" value="2" class="ex_frameCount ex1.2"><br>
+					<strong id="ex"></strong>
+					<script src="JS/CommissionHelper.js"></script>
+
+					<br>total: <strong>20</strong>$<br>
+					<strong>1</strong> default, <strong>0</strong> animated<br><br>
+
+					Commission Parameters:<br>
+					<input type="text" readonly="readonly" value="test">
+					<button>Copy</button>
 				</strong>
-
-				<br>total: <strong>20</strong>$<br>
-				<strong>1</strong> default, <strong>0</strong> animated<br><br>
-
-				Commission Parameters:<br>
-				<input type="text" readonly="readonly" value="test">
-				<button>Copy</button>
 		</div>
 		<div id="artworks">
 			<p class="Text3"><strong>
