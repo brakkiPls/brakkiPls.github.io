@@ -134,17 +134,17 @@ function art_updateVisibility(element, yes, no) {
             break
 
         case "at_lines":
-            document.getElementById("at_i2").style.visibility = state
+            document.getElementById("at_li").style.visibility = state
             break
             
         case "at_shade":
-            document.getElementById("at_i3").style.visibility = state
-            document.getElementById("at_p3").style.visibility = state
+            document.getElementById("at_si").style.visibility = state
+            document.getElementById("at_sp").style.visibility = state
             break
             
         case "at_back":
-            document.getElementById("at_i4").style.visibility = state
-            document.getElementById("at_p4").style.visibility = state
+            document.getElementById("at_bi").style.visibility = state
+            document.getElementById("at_bp").style.visibility = state
             break
             
         case "at_spice":
