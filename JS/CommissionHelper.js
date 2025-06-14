@@ -221,6 +221,7 @@ function at_calcTotal() {
 
     document.getElementById("at_total").textContent = total
     
+    if (charCount > 1)param += ".chars:" + charCount
     param += "=" + total
     document.getElementById("at_param").value = param
 }
