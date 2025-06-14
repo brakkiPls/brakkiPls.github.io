@@ -84,7 +84,7 @@ button:hover {
     text-align: center;
     color: lightblue;
     text-shadow: #d8d4e7 2px 2px 10px;
-    font-family: cursive;
+    font-family: 'Balsamiq Sans';
 }
 
 .template_img {
@@ -102,7 +102,7 @@ button:hover {
     width: 500px;
     color: lightblue;
     text-shadow: #000000 2px 2px 2px;
-    font-family: cursive;
+    font-family: 'Balsamiq Sans';
 }
 
 .green {
@@ -130,7 +130,7 @@ button:hover {
     color: 120542;
     text-shadow: #2789e6 2px 2px 2px;
     padding: 15px;
-    font-family: cursive;
+    font-family: 'Balsamiq Sans';
     font-weight: 600;
 }
 

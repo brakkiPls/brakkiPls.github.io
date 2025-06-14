@@ -24,7 +24,7 @@ button:hover, input:hover {
     text-align: center;
     color: lightblue;
     text-shadow: #000000 2px 2px 2px;
-    font-family: cursive;
+    font-family: 'Balsamiq Sans';
     font-size: 20px;
     max-width: 500px;
     margin: auto;
@@ -87,15 +87,15 @@ button:hover, input:hover {
 }
 
 #buttonCap, #buttonCap2 {
-    margin-top: -185px;
+    margin-top: -170px;
     align-self: center;
     color: #05195e;
     text-shadow: -1px -1px 5px #c6e8ff, 1px -1px 5px #c6e8ff, -1px 1px 5px #c6e8ff, 1px 1px 5px #c6e8ff;
-    font-size: 60px;
+    font-size: 60px
 }
 
 #buttonCap2 {
-    margin-top: -225px;
+    margin-top: -200px;
 }
 
 #buttonIMG {
@@ -138,6 +138,9 @@ button:hover, input:hover {
     }
     .sideR {
         padding-right: 0px;
+    }
+    #buttonCap, #buttonCap2 {
+        font-size: 7vw;;
     }
 }
 
