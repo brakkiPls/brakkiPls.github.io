@@ -42,6 +42,7 @@
     overflow-y: auto;
     height: 1000px;
     max-width: 600px;
+    overflow-x: hidden;
 }
 
 .linkHide {
@@ -117,7 +118,7 @@
     margin-top: -1000px;
 }
 
-#artworks {
+#emotes {
     display: none;
 }
 
@@ -173,4 +174,80 @@
     max-width: 40px;
     text-align: center;
     visibility: hidden;
+}
+
+/*Art comission helper*/
+.at {
+    background-color: #abb7d18e;
+    color: #011044;
+    text-shadow: 2px 2px 4px #cdebffc0;
+    border-radius: 10px;
+    outline: 3px solid #011044;
+    box-shadow: 10px 5px 5px #a4aaff49;
+    width: 550px;
+    margin: auto;
+}
+
+.at_grid {
+    display: flex;
+}
+
+.at_buttons, .at_images {
+    width: 300px;
+    height: 230px;
+    margin-left: 15px;
+}
+
+.at_buttons {
+    margin-top: -15px;
+}
+
+.at_preview {
+    width: 300px;
+    height: 200px;
+    margin-top: -200px;
+}
+
+.at_img{
+    margin-top: 200px;
+    outline: #05195e solid 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #cdebff31;
+}
+
+.guy {
+    outline: none;
+    border-radius: none;
+    box-shadow: none;
+}
+
+#at_i3, #at_i4, #at_p3, #at_p4 {
+    visibility: hidden;
+}
+
+#at_numChars {
+    max-width: 40px;
+    text-align: center;
+}
+
+#at_moveup {
+    margin-top: -18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .at {
+        width: 97%;
+    }
+    .at_grid {
+        flex-direction: column;
+    }
+    .at_buttons, .at_images {
+        margin: auto;
+    }
+    .at_buttons {
+        margin-top: -20px;
+    }
+    .at_extraButtons {
+        margin-top: 20px;
+    }
 }

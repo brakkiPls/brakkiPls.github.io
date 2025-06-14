@@ -86,37 +86,76 @@
 					(<strong id="ex_total_N"></strong> default, <strong id="ex_total_A"></strong> animated)<br><br>
 
 					Commission Parameters:<br>
-					<input type="text" readonly="readonly" value="test" id="ex_param" onclick="emote_copyParam()">
-					<button onclick="emote_copyParam()">Copy</button><br>
+					<input type="text" readonly="readonly" value="test" id="ex_param" onclick="emote_copyParam('ex_param')">
+					<button onclick="emote_copyParam('ex_param')">Copy</button><br>
 					--------------------------------
-					<script src="JS/CommissionHelper.js"></script>
 				</div>
-			</div>
+			</strong></div>
 		</div>
 		<div id="artworks">
-			<p class="Text3"><strong>
-				illustrated:<br>
-				- 30$ for sketch<br>
-				- +15$ for lines/flat color<br><br>
+			<div class="Text3"><strong>
+				<p>
+					todo:<br>
+					- 30$ for sketch<br>
+					- +15$ for lines/flat color<br>
+					- 45$ for sketch<br>
+					- +15$ for shading<br>
+					- +30$ per character<br>
+					- +15$ complex background<br>
+					- +15$ for nsfw<br><br>
+				
+					<i>-> dynamically updates preview image/price</i><br>
+					<i>-> generates link for me to see what they got</i><br><br>
+					- show examples with what they are (sketch, lines, ...)<br>
+					check out <a href="tos.html" class="linkHide">tos</a>!<br><br>
+					(make ID leading here)
+				</p>
 
-				painted:<br>
-				- 45$ for sketch<br><br>
+				<div class="at"><strong>
+					<p class="nowrap">-------------------------------------------------</p>
+					<p id="at_moveup">What kind of Drawing would you like?</p>
 
-				combined:<br>
-				- +15$ for shading<br>
-				- +30$ per character<br>
-				- +15$ complex background<br>
-				- +15$ for nsfw<br><br>
-			
-				- comission thing<br>
-				<i>- checkboxes for individual options</i><br>
-				<i>-> dynamically updates preview image</i><br>
-				<i>-> dynamically update price</i><br>
-				<i>-> generates link for me to see what they got</i><br><br>
-				- show examples with what they are (sketch, lines, ...)<br>
-				check out <a href="tos.html" class="linkHide">tos</a>!<br><br>
-				(make ID leading here)
-			</strong></p>
+					<div class="at_grid">
+						<div class="at_images">
+							<div class="at_ills">
+								<div class="at_preview"><img src="Images/ArtComissionHelper/ills_sketch.png" alt="isketch" class="at_img" id="at_i1"></div>
+								<div class="at_preview"><img src="Images/ArtComissionHelper/ills_lines.png" alt="lines" class="at_img" id="at_i2"></div>
+								<div class="at_preview"><img src="Images/ArtComissionHelper/ills_shade.png" alt="ishade" class="at_img" id="at_i3"></div>
+								<div class="at_preview"><img src="Images/ArtComissionHelper/ills_bg.png" alt="ibg" class="at_img" id="at_i4"></div>
+								<div class="at_preview"><img src="Images/ArtComissionHelper/ills_char.png" alt="iguy" class="at_img guy" id="at_i5"></div>
+							</div>
+							<div class="at_paint">
+								<div class="at_preview"><img src="Images/ArtComissionHelper/paint_sketch.png" alt="psketch" class="at_img" id="at_p1"></div>
+								<div class="at_preview"><img src="Images/ArtComissionHelper/paint_shade.png" alt="pshade" class="at_img" id="at_p3"></div>
+								<div class="at_preview"><img src="Images/ArtComissionHelper/paint_bg.png" alt="pbg" class="at_img" id="at_p4"></div>
+								<div class="at_preview"><img src="Images/ArtComissionHelper/paint_char.png" alt="pguy" class="at_img guy" id="at_p5"></div>
+							</div>
+						</div>
+
+						<div class="at_buttons">
+							Artstyle: <button id="at_style" onclick="art_updateVisibility(this, 'Illustrated', 'Painted')">Illustrated</button><br><br>
+
+							Characters: <input type="number" id="at_numChars" value="1" min="1" max="5"><br><br>
+
+							<strong id="at_hide">Lines? <button id="at_lines" onclick="art_updateVisibility(this, '✔️', '❌')">✔️</button><br></strong>
+							Shading? <button id="at_shade" onclick="art_updateVisibility(this, '✔️', '❌')">❌</button><br>
+							Background? <button id="at_back" onclick="art_updateVisibility(this, '✔️', '❌')">❌</button><br>
+							NSFW? <button id="at_spice" onclick="art_updateVisibility(this, '✔️', '❌')">❌</button>
+						</div>
+					</div>
+
+					<div class="at_extraButtons">
+						Total drawing for <strong id="at_total">100</strong>$<br><br>
+
+						Commission Parameters:<br>
+						<input type="text" readonly="readonly" value="test" id="at_param" onclick="emote_copyParam('at_param')">
+						<button onclick="emote_copyParam('at_param')">Copy</button>
+					</div>
+
+					<p class="nowrap">-------------------------------------------------</p>
+					<script src="JS/CommissionHelper.js"></script>
+				</strong></div>
+			</strong></div>
 		</div>
 	</body>
 </html>

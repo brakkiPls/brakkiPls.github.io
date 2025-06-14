@@ -4,12 +4,7 @@ function emote_drawSettings(onload) {
     var menuDiv = ""
 
     if (!onload) {
-        amtEmotes = Math.round(document.getElementById("ex_input").value)
-
-        if (amtEmotes <= 0)amtEmotes = 1
-        if (amtEmotes > 20)amtEmotes = 20
-
-        document.getElementById("ex_input").value = amtEmotes
+        amtEmotes = fixNumber(document.getElementById("ex_input"), 2, 20)
     }
 
     for (var i = 1; i <= amtEmotes; i++) {
@@ -22,6 +17,17 @@ function emote_drawSettings(onload) {
     document.getElementById("ex").innerHTML = menuDiv
 
     emote_calcTotal()
+}
+
+function fixNumber(el, min, max) {
+
+    var newVal = Math.round(el.value)
+
+    if (newVal < min)newVal = min
+    if (newVal > max)newVal = max
+
+    el.value = newVal
+    return newVal
 }
 
 function emote_updateVisibility(element, yes, no) {
@@ -109,11 +115,65 @@ function emote_calcTotal() {
     document.getElementById("ex_param").value = param
 }
 
-function emote_copyParam() {
+function emote_copyParam(id) {
 
-    var toCopy = document.getElementById("ex_param").value
+    var toCopy = document.getElementById(id).value
     navigator.clipboard.writeText(toCopy)
+}
+
+function art_updateVisibility(element, yes, no) {
+    var id = element.id
+    var state = "visible"
+
+    if (element.innerHTML == yes) {
+        element.innerHTML = no
+        state = "hidden"
+    }
+    else {
+        element.innerHTML = yes
+    }
+
+    switch (id) {
+        case "at_style":
+            document.getElementById("at_hide").style.visibility = state
+            
+            if (element.innerHTML == no) {
+                document.querySelector(".at_ills").style.display = "none"
+                document.querySelector(".at_paint").style.display = ""
+            }
+            else {
+                document.querySelector(".at_ills").style.display = ""
+                document.querySelector(".at_paint").style.display = "none"
+            }
+            break
+
+        case "at_lines":
+            document.getElementById("at_i2").style.visibility = state
+            break
+            
+        case "at_shade":
+            document.getElementById("at_i3").style.visibility = state
+            document.getElementById("at_p3").style.visibility = state
+            break
+            
+        case "at_back":
+            document.getElementById("at_i4").style.visibility = state
+            document.getElementById("at_p4").style.visibility = state
+            break
+            
+        case "at_spice":
+            var filter = ""
+            if (element.innerHTML == yes)filter = "blur(3px)"
+
+            var guys = document.getElementsByClassName("guy")
+
+            for (var i = 0; i<guys.length; i++) {
+                guys[i].style.filter = filter
+            }
+            break
+    }
 }
 
 emote_drawSettings(true)
 emote_calcTotal()
+document.querySelector(".at_paint").style.display = "none"
