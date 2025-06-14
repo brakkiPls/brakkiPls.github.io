@@ -215,6 +215,10 @@
     box-shadow: 2px 2px 7px #cdebff31;
 }
 
+.at_guywrapper_i, .at_guywrapper_p {
+    display: flex;
+}
+
 .guy {
     outline: none;
     border-radius: none;

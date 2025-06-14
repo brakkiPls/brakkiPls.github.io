@@ -19,17 +19,6 @@ function emote_drawSettings(onload) {
     emote_calcTotal()
 }
 
-function fixNumber(el, min, max) {
-
-    var newVal = Math.round(el.value)
-
-    if (newVal < min)newVal = min
-    if (newVal > max)newVal = max
-
-    el.value = newVal
-    return newVal
-}
-
 function emote_updateVisibility(element, yes, no) {
 
     var id = element.id
@@ -81,10 +70,7 @@ function emote_calcTotal() {
                 param += "(v)"
             }
             else {
-                var frameCount = Math.round(Frames[i].value)
-                if (frameCount <= 1)amtEmotes = 2
-                if (frameCount > 99)amtEmotes = 99
-                Frames[i].value = frameCount
+                var frameCount = fixNumber(Frames[i], 1, 99)
 
                 total += (3 * frameCount)
                 param += "(f:" + frameCount + ")"
@@ -165,15 +151,92 @@ function art_updateVisibility(element, yes, no) {
             var filter = ""
             if (element.innerHTML == yes)filter = "blur(3px)"
 
-            var guys = document.getElementsByClassName("guy")
-
-            for (var i = 0; i<guys.length; i++) {
-                guys[i].style.filter = filter
-            }
+            at_blur(filter)
             break
     }
+
+    at_calcTotal()
+}
+
+function at_blur(filter) {
+    
+    var guys = document.getElementsByClassName("guy")
+
+    for (var i = 0; i<guys.length; i++) {
+        guys[i].style.filter = filter
+    }
+}
+
+function at_summonDudes() {
+
+    var amtDudes = fixNumber(document.getElementById("at_numChars"), 1, 5)
+    var guys_i = ""
+    var guys_p = ""
+
+    for (var i = 0; i < amtDudes; i++) {
+        guys_i += '<div class="at_preview"><img src="Images/ArtComissionHelper/ills_char.png" alt="iguy" class="at_img guy"></div>'
+    }
+    for (var i = 0; i < amtDudes; i++) {
+        guys_p += '<div class="at_preview"><img src="Images/ArtComissionHelper/paint_char.png" alt="pguy" class="at_img guy"></div>'
+    }
+
+    document.querySelector(".at_guywrapper_i").innerHTML = guys_i
+    document.querySelector(".at_guywrapper_p").innerHTML = guys_p
+
+    if (document.getElementById("at_spice").innerHTML == "✔️")at_blur("blur(3px)")
+
+    at_calcTotal()
+}
+
+function at_calcTotal() {
+
+    const artType = document.getElementById("at_style").innerHTML
+    const yes = '✔️'
+    
+    var total = 30
+    var param = artType
+
+    const charCount = document.getElementById("at_numChars").value
+    total += 30 * (charCount - 1)
+
+    if (artType == "Painted") {
+        total += 15
+    }
+    if (artType == "Illustrated" && document.getElementById("at_lines").innerHTML == yes) {
+        total += 15
+        param += "(lines)"
+    }
+    if (document.getElementById("at_shade").innerHTML == yes) {
+        total += 15
+        param += "(shading)"
+    }
+    if (document.getElementById("at_back").innerHTML == yes) {
+        total += 15
+        param += "(background)"
+    }
+    if (document.getElementById("at_spice").innerHTML == yes) {
+        total += 15
+        param += "(spicy)"
+    }
+
+    document.getElementById("at_total").textContent = total
+    
+    param += "=" + total
+    document.getElementById("at_param").value = param
+}
+
+function fixNumber(el, min, max) {
+
+    var newVal = Math.round(el.value)
+
+    if (newVal < min)newVal = min
+    if (newVal > max)newVal = max
+
+    el.value = newVal
+    return newVal
 }
 
 emote_drawSettings(true)
 emote_calcTotal()
 document.querySelector(".at_paint").style.display = "none"
+at_summonDudes()
