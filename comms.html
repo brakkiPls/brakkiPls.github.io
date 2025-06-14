@@ -64,30 +64,34 @@
 		<script src="JS/switchDisplay.js"></script>
 		<div class="bigBox"></div>
 		<div id="emotes">
-			<p class="Text3"><strong>
-				- emote calculator<br>
-				<i>-> chose which ones are new animated</i><br>
-				<i>-> update total on frame count update</i><br>
-				<i>-> generates link for me to see what they got</i><br><br>
-				- show examples with what they are (frame animated + frames/ vector animated, etc)<br>
-				check out <a href="tos.html" class="linkHide">tos</a>!<br><br>
-				(make ID leading here)<br><br>
+			<div class="Text3"><strong>
+				<p>
+					todo:<br>
+					<i>-> explain button on hover</i><br>
+					<i>-> show 'copied!' text when copying param</i><br><br>
+					- show examples with what they are (frame animated + frames/ vector animated, etc)<br>
+					- smol icons next to emotes in emote list<br>
+					check out <a href="tos.html" class="linkHide">tos</a>!<br><br>
+					(make ID leading here)<br><br>
+				</p>
 
-				<strong class="emote_calculator">
+				<div class="emote_calculator">
+					--------------------------------<br>
 					How many Emotes would you like?<br>
-					<input type="number" min="1" max="20" value="1" id="ex_input">
+					<input type="number" min="1" max="20" value="1" id="ex_input" onclick="emote_drawSettings(false)">
 					<button onclick="emote_drawSettings(false)">Go!</button><br><br>
 
-					<strong id="ex"></strong>
-					<script src="JS/CommissionHelper.js"></script>
-
-					<br>total: <strong>20</strong>$<br>
-					<strong>1</strong> default, <strong>0</strong> animated<br><br>
+					<strong id="ex"></strong><br>
+					<strong id="ex_total_E" ></strong> total for <strong id="ex_total_P"></strong>$<br>
+					(<strong id="ex_total_N"></strong> default, <strong id="ex_total_A"></strong> animated)<br><br>
 
 					Commission Parameters:<br>
-					<input type="text" readonly="readonly" value="test">
-					<button>Copy</button>
-				</strong>
+					<input type="text" readonly="readonly" value="test" id="ex_param" onclick="emote_copyParam()">
+					<button onclick="emote_copyParam()">Copy</button><br>
+					--------------------------------
+					<script src="JS/CommissionHelper.js"></script>
+				</div>
+			</div>
 		</div>
 		<div id="artworks">
 			<p class="Text3"><strong>

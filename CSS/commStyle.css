@@ -33,6 +33,7 @@
     overflow: hidden;
     outline: solid 5px #120542;
     box-shadow: 10px 5px 5px #a4aaff49;
+    z-index: 10;
 }
 
 .Text3 {
@@ -96,6 +97,7 @@
     width: 300px;
     height: 250px;
     object-fit: cover;
+    object-position: center;
     background-color: #c6e8ff;
 }
 
@@ -144,6 +146,23 @@
 }
 
 /*Emote comission helper*/
+.emote_calculator {
+    width: 400px;
+    background-color: #abb7d18e;
+    color: #011044;
+    text-shadow: 2px 2px 4px #cdebffc0;
+    margin: auto;
+    border-radius: 10px;
+    outline: 3px solid #011044;
+    box-shadow: 10px 5px 5px #a4aaff49;
+}
+
+.ex_emoteExists {
+    height: 24px;
+    width: 40px;
+    visibility: hidden;
+}
+
 .ex_animType {
     height: 24px;
     width: 55px;

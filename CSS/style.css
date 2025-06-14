@@ -1,6 +1,7 @@
 body{
     animation: fadeInBdy 1s;
     background-color: #091624;
+    overflow-x: hidden
 }
 
 @keyframes fadeInBdy {
