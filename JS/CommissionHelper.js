@@ -4,7 +4,7 @@ function emote_drawSettings(onload) {
     var menuDiv = ""
 
     if (!onload) {
-        amtEmotes = fixNumber(document.getElementById("ex_input"), 2, 20)
+        amtEmotes = fixNumber(document.getElementById("ex_input"), 1, 20)
     }
 
     for (var i = 1; i <= amtEmotes; i++) {

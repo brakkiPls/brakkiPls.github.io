@@ -183,6 +183,18 @@ button:hover, input:hover {
     visibility: hidden;
 }
 
+@media only screen and (max-width: 450px) {
+    .emote_calculator {
+        width: 97%;
+    }
+    .Text {
+        font-size: 18px;
+    }
+    .Caption {
+        font-size: 50px;
+    }
+}
+
 /*Art comission helper*/
 .at {
     background-color: #abb7d18e;
