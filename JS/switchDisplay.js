@@ -1,7 +1,8 @@
-function changeBody(show, hide) {
+function changeBody(show, hide, hide2) {
 
-    document.getElementById(show).style.display = 'flex';
+    document.getElementById(show).style.display = 'grid';
     document.getElementById(hide).style.display = 'none';
+    document.getElementById(hide2).style.display = 'none';
 }
 
 function buttonMove(button) {

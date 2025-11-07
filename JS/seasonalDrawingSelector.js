@@ -138,6 +138,7 @@ function getCurrSeasonalDrawings () {
         "",
     ];
 
+    console.log(document.getElementById("YCH1_hl"))
     document.getElementById("YCH1_hl").innerHTML = hl1[month];
     document.getElementById("YCH1_desc").innerHTML = desc1[month];
     document.getElementById("YCH1_img").src = "Images/SeasonalArt/" + month + "_1_0.png"
