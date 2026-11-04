@@ -30,12 +30,15 @@
 				<strong>Looks like you are curious about getting arts from the green derg?<br>
 					That's awesome! Here, let me show you what i got!<br><br>
 
-					You need Emotes for Twitch? I got you! You ant to get a cool Drawing? No problem!
-					What about an art that fits the current season for cheaper? We got it all!<br><br>
+					You need Emotes or Stickers? I got you! You want to get a cool Drawing? How about 
+					a comic page? We got it all!<br><br>
 
 					If you want something that you can't see here, feel free to
 					<a href="tos.html" class="linkHide">contact</a> me!<br>
-					I'm open for your ideas!
+					I'm open for your ideas!<br><br>
+
+					Check out my <a href="tos.html" class="linkHide">TOS</a> and my
+					<a href="queue.html" class="linkHide">Queue</a> before reaching out, please!
 				</strong>
 			</p>
 			<div class="sideR">
@@ -43,204 +46,30 @@
 				<img src="Images/RawrInCar.gif" alt="Car" class="emote" id="car">
 			</div>
 		</div>
+		
+		<div class="bigBox">
+			<div class="ArtCommBox Flat">
+				<img src="Images/CommExample1.png" alt="flat">
+				<div class="Text">
+					<strong id="subcapt"><u>Flat Colour</u><br><br>60 usd
 
-		<div class="mainBox2">
-			<div class="Text2" onclick="changeBody('emotes', 'artworks', 'seasonArt')" id="emoteButton">
-				<img src="Images/EmoteCommButton.png" alt="Emotes" id="buttonIMG">
-				<p id="buttonCap2">Emotes /<br>Stickers</p>
-			</div>
-			<div class="Text2" onclick="changeBody('artworks', 'emotes', 'seasonArt')" id="artworkButton">
-				<img src="Images/SampleArt/cuddle.png" alt="Cuddle" id="buttonIMG">
-				<p id="buttonCap">Artworks</p>
-			</div>
-			<!--function for seasonal drawings, if i ever do them: onclick="changeBody('seasonArt', 'emotes', 'artworks')"-->
-			<div class="Text2" id="drawingButton">
-				<img src="Images/SampleArt/cuddle.png" alt="Cuddle" class="seasonal WIP" id="buttonIMG">
-				<p id="buttonCap2" class="WIP">Seasonal<br>Drawings<br>(WIP)</p>
-			</div>
-		</div>
-
-		<script src="JS/switchDisplay.js"></script>
-		<div class="bigBox"></div>
-		<div id="emotes">
-			<h1 class="TextB , CaptionB">Emotes</h1>
-			<div class="Text3"><strong>
-				<p>
-					todo:<br>
-					<i>-> explain button on hover</i><br>
-					<i>-> show 'copied!' text when copying param</i><br><br>
-					- show examples with what they are (frame animated + frames/ vector animated, etc)<br>
-					- smol icons next to emotes in emote list<br>
-					check out <a href="tos.html" class="linkHide">tos</a>!<br><br>
-					(make ID leading here)<br><br>
-				</p>
-
-				<div class="emote_calculator">
-					<p class="nowrap">------------------------------------------------------</p>
-					How many Emotes would you like?<br>
-					<input type="number" min="1" max="20" value="1" id="ex_input" onclick="emote_drawSettings(false)">
-					<button onclick="emote_drawSettings(false)">Go!</button><br><br>
-
-					<strong id="ex"></strong><br>
-					<strong id="ex_total_E" ></strong> total for <strong id="ex_total_P"></strong>$<br>
-					(<strong id="ex_total_N"></strong> default, <strong id="ex_total_A"></strong> animated)<br><br>
-
-					Commission Parameters:<br>
-					<input type="text" readonly="readonly" value="test" id="ex_param" onclick="emote_copyParam('ex_param')">
-					<button onclick="emote_copyParam('ex_param')">Copy</button><br>
-					<p class="nowrap">------------------------------------------------------</p>
+					</strong>
 				</div>
-			</strong></div>
-		</div>
-		<div id="artworks">
-			<h1 class="TextB , CaptionB">Artworks</h1>
-			<div class="Text3"><strong>
-				<p>
-					todo:<br>
-					<i>-> explain button on hover</i><br>
-					<i>-> show 'copied!' text when copying param</i><br><br>
-					- show examples with what they are (sketch, lines, ...)<br>
-					check out <a href="tos.html" class="linkHide">tos</a>!<br><br>
-					(make ID leading here)
-				</p>
-
-				<div class="at"><strong>
-					<p class="nowrap">-----------------------------------------------------------------------------</p>
-					<p id="at_moveup">What kind of Drawing would you like?</p>
-
-					<div class="at_grid">
-						<div class="at_images">
-							<div class="at_ills">
-								<div class="at_preview"><img src="Images/ArtComissionHelper/ills_sketch.png" alt="isketch" class="at_img"></div>
-								<div class="at_preview"><img src="Images/ArtComissionHelper/ills_lines.png" alt="lines" class="at_img" id="at_li"></div>
-								<div class="at_preview"><img src="Images/ArtComissionHelper/ills_shade.png" alt="ishade" class="at_img" id="at_si"></div>
-								<div class="at_preview"><img src="Images/ArtComissionHelper/ills_bg.png" alt="ibg" class="at_img" id="at_bi"></div>
-								<div class="at_guywrapper_i"></div>
-							</div>
-							<div class="at_paint">
-								<div class="at_preview"><img src="Images/ArtComissionHelper/paint_sketch.png" alt="psketch" class="at_img"></div>
-								<div class="at_preview"><img src="Images/ArtComissionHelper/paint_shade.png" alt="pshade" class="at_img" id="at_sp"></div>
-								<div class="at_preview"><img src="Images/ArtComissionHelper/paint_bg.png" alt="pbg" class="at_img" id="at_bp"></div>
-								<div class="at_guywrapper_p"></div>
-							</div>
-						</div>
-
-						<div class="at_buttons">
-							Artstyle: <button id="at_style" onclick="art_updateVisibility(this, 'Illustrated', 'Painted')">Illustrated</button><br><br>
-
-							Characters: <input type="number" id="at_numChars" value="1" min="1" max="5" onkeyup="at_summonDudes()" onclick="at_summonDudes()"><br><br>
-
-							<strong id="at_hide">Lines? <button id="at_lines" onclick="art_updateVisibility(this, '✔️', '❌')">✔️</button><br></strong>
-							Shading? <button id="at_shade" onclick="art_updateVisibility(this, '✔️', '❌')">❌</button><br>
-							Background? <button id="at_back" onclick="art_updateVisibility(this, '✔️', '❌')">❌</button><br>
-							Spicy? <button id="at_spice" onclick="art_updateVisibility(this, '✔️', '❌')">❌</button>
-						</div>
-					</div>
-
-					<div class="at_extraButtons">
-						Total drawing for <strong id="at_total"></strong>$<br><br>
-
-						Commission Parameters:<br>
-						<input type="text" readonly="readonly" value="test" id="at_param" onclick="emote_copyParam('at_param')">
-						<button onclick="emote_copyParam('at_param')">Copy</button>
-					</div>
-
-					<p class="nowrap">-----------------------------------------------------------------------------</p>
-					<script src="JS/CommissionHelper.js"></script>
-				</strong></div>
-			</strong></div>
-		</div>
-
-		<script src="JS/seasonalDrawingSelector.js"></script>
-			<div id="seasonArt">
-				<div class="fixedContent">
-					<h1 class="TextB , CaptionB">Seasonal Drawings</h1>
-					<p class="TextB littleBigger"><strong>
-						<br>Here you can see the <i class="special">Seasonal Drawings!</I><br>
-						Each month there is a different selection of 3 template drawings that you can get me to draw,
-						but you can customize these a lot more than a classic YCH.<br>
-						The Price for any <i class="special">Seasonal Drawing</i> is <i class="special">50 usd</i>.<br>
-					</strong></p>
-					<p class="TextB green littleBigger"><strong>
-						<i class="underline">You can:</i><br>
-						- Chose your own Character!<br>
-						- Add accessoires if wanted! (Bandana, Hat, ...)<br>
-						- Chose your individual Pose and Expression!<br>
-						- Chose painted or illustrated style (Sample below)<br>
-						- Add an extra character! (= 50$)<br>
-						- Ask me any more questions you have.<br>
-					</strong></p>
-					<p class="TextB red littleBigger"><strong>
-						<i class="underline">You can not:</i><br>
-						- Change the main idea of the drawing<br>
-						- Rush me. I can take my time.<br>
-						- Force me to accept your commission.<br>
-						- Get a refund. Make sure you actually want this!<br>
-					</strong></p>
-					<p class="TextB littleBigger"><strong>
-						Make sure to check out the samples to see if you are interested in getting a <i class="special">Seasonal Drawing</i> of your character!<br>
-						If you are, please message me on Discord! (@brakkie)<br><br>
-						Please make sure you notify me before you give me money to make sure that your idea is ok!<br><br>
-						</strong>
-					</strong></p>
-					<div class="samples">
-						<p class="box"><strong>Sample Painted:</strong></p>
-						<p class="box"><strong>Sample Illustrated:</strong></p>
-						<img src="Images/SampleArt/cup.png" alt="Paint" class="box">
-						<img src="Images/SampleArt/cuddle.png" alt="Cuddle" class="box">
-					</div>
+			</div>
+			<div class="ArtCommBox Simple">
+				<div class="Text">
+					<strong id="subcapt"><u>Simple Shaded</u><br><br>85 usd</strong>
 				</div>
-
-				<div class="empty"></div>
-				<div class="seasonalDrawings">
-					<h1 class="overlayText underline" id="YCH1_hl"></h1>
-					<p class="overlayText littleBigger" id="YCH1_desc"></p>
-					<img src="" class="template_img" id="YCH1_img">
-					<div class="theStuff">
-						<button class="button" id="button_l" onclick="nextPicture(0)"><</button>
-						<button class="button" id="button_r" onclick="prevPicture(0)">></button>
-						<div class="examples">
-							<img src="" class="example_img" id="img1_1" onclick="selectPicture(1, 1)">
-							<img src="" class="example_img" id="img1_2" onclick="selectPicture(1, 2)">
-							<img src="" class="example_img" id="img1_3" onclick="selectPicture(1, 3)">
-							<img src="" class="example_img" id="img1_4" onclick="selectPicture(1, 4)">
-							<img src="" class="example_img" id="img1_5" onclick="selectPicture(1, 5)">
-						</div>
-					</div>
-					<p class="overlayText devider">------------------------------------------------</p>
-					<h1 class="overlayText underline" id="YCH2_hl"></h1>
-					<p class="overlayText littleBigger" id="YCH2_desc"></p>
-					<img src="" class="template_img" id="YCH2_img">
-					<div class="theStuff">
-						<button class="button" id="button_l" onclick="nextPicture(1)"><</button>
-						<button class="button" id="button_r" onclick="prevPicture(1)">></button>
-						<div class="examples">
-							<img src="" class="example_img" id="img2_1" onclick="selectPicture(2, 1)">
-							<img src="" class="example_img" id="img2_2" onclick="selectPicture(2, 2)">
-							<img src="" class="example_img" id="img2_3" onclick="selectPicture(2, 3)">
-							<img src="" class="example_img" id="img2_4" onclick="selectPicture(2, 4)">
-							<img src="" class="example_img" id="img2_5" onclick="selectPicture(2, 5)">
-						</div>
-					</div>
-					<p class="overlayText devider">------------------------------------------------</p>
-					<h1 class="overlayText underline" id="YCH3_hl"></h1>
-					<p class="overlayText littleBigger" id="YCH3_desc"></p>
-					<img src="" class="template_img" id="YCH3_img">
-					<div class="theStuff">
-						<button class="button" id="button_l" onclick="nextPicture(2)"><</button>
-						<button class="button" id="button_r" onclick="prevPicture(2)">></button>
-						<div class="examples">
-							<img src="" class="example_img" id="img3_1" onclick="selectPicture(3, 1)">
-							<img src="" class="example_img" id="img3_2" onclick="selectPicture(3, 2)">
-							<img src="" class="example_img" id="img3_3" onclick="selectPicture(3, 3)">
-							<img src="" class="example_img" id="img3_4" onclick="selectPicture(3, 4)">
-							<img src="" class="example_img" id="img3_5" onclick="selectPicture(3, 5)">
-						</div>
-					</div>
+				<img src="Images/CommExample3.png" alt="flat">
+			</div>
+			<div class="ArtCommBox Shaded">
+				<img src="Images/CommExample2.png" alt="flat">
+				<div class="Text">
+					<strong id="subcapt"><u>Fully Rendered</u><br><br>100 usd<br><br></strong>
+					* Background not included
 				</div>
-			<script src="JS/seasonalDrawingExampleHandle.js"></script>
-			<script>getCurrSeasonalDrawings()</script>
 			</div>
 		</div>
+
 	</body>
 </html>
