@@ -65,6 +65,49 @@ button:hover, input:hover {
     width: 200px;
 }
 
+.bigBox {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ArtCommBox, .Addons{
+    border-radius: 5px;
+    display: flex;
+    background-color: #94c1f548;
+    box-shadow: 10px 5px 5px #120542a4;
+    border: 3px solid #123d7e9a;
+}
+
+.ArtCommBox div {
+    width: 60%;
+}
+
+.ArtCommBox img {
+    width: 40%;
+    border-radius: 5px;
+    border: 3px solid #1205426e;
+}
+
+#subcapt {
+    font-size: 30px;
+}
+
+.Flat, .Shaded {
+    margin-left: -5%;
+}
+
+.Simple {
+    margin-right: -5%;
+}
+
+.Addons {
+    margin-top: 50px;
+}
+
 @media only screen and (max-width: 800px) {
     .emote, #car {
         width: 112px;
@@ -78,31 +121,20 @@ button:hover, input:hover {
     .sideR {
         padding-right: 0px;
     }
-}
-
-.bigBox {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-left: 7%;
-    margin-right: 7%;
-}
-
-.ArtCommBox {
-    border-radius: 5px;
-    display: flex;
-}
-
-.ArtCommBox div {
-    width: 60%;
-}
-
-.ArtCommBox img {
-    width: 40%;
-    border-radius: 5px;
-}
-
-#subcapt {
-    font-size: 30px;
+    .ArtCommBox {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .bigBox {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .ArtCommBox img {
+        align-self: center;
+        width: 100%;
+    }
+    .Flat, .Shaded, .Simple {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
 }
