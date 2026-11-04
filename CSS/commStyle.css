@@ -351,6 +351,10 @@ button:hover, input:hover {
     margin-right: 50%;
 }
 
+.WIP {
+    filter: opacity(50%);
+}
+
 .samples {
     margin-top: -20px;
     width: 500px;
