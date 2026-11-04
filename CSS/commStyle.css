@@ -18,24 +18,36 @@ button:hover, input:hover {
 }
 
 .Text {
+    max-width: 500px;
+}
+
+.Text3 {
+    max-width: 80%;
+}
+
+.Text, .Text2, .Text3 {
     text-align: center;
     color: lightblue;
     text-shadow: #000000 2px 2px 2px;
     font-family: 'Balsamiq Sans';
     margin: auto;
-    max-height: 500px;
     font-size: 20px;
-    max-width: 500px;
 }
 
 .linkHide {
     color: lightgreen;
 }
 
-.Caption {
-    font-size: 50px;
+.Caption, .Caption2 {
+    font-size: 100px;
     text-decoration: underline;
     color: #7be61e;
+    max-width: 100%;
+}
+
+.Caption2 {
+    font-size: 50px;
+    margin-top: 50px;
 }
 
 .special {
@@ -74,7 +86,7 @@ button:hover, input:hover {
     margin-right: 10%;
 }
 
-.ArtCommBox, .Addons{
+.ArtCommBox, .Addons, .DoDonts{
     border-radius: 5px;
     display: flex;
     background-color: #94c1f548;
@@ -100,12 +112,31 @@ button:hover, input:hover {
     margin-left: -5%;
 }
 
-.Simple {
+.Simple, .Stickers {
     margin-right: -5%;
 }
 
-.Addons {
+.Addons, .DoDonts {
     margin-top: 50px;
+}
+
+.green {
+    color: lightgreen;
+}
+
+.red {
+    color: lightcoral;
+}
+
+.green, .red {
+    width: 400px;
+}
+
+.DoDonts {
+    width: 800px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 @media only screen and (max-width: 800px) {
@@ -121,7 +152,7 @@ button:hover, input:hover {
     .sideR {
         padding-right: 0px;
     }
-    .ArtCommBox {
+    .ArtCommBox, .DoDonts {
         flex-direction: column;
         gap: 30px;
     }
@@ -133,8 +164,11 @@ button:hover, input:hover {
         align-self: center;
         width: 100%;
     }
-    .Flat, .Shaded, .Simple {
+    .Flat, .Shaded, .Simple, .Stickers {
         margin-right: 0%;
         margin-left: 0%;
+    }
+    .DoDonts {
+        width: 400px;
     }
 }
