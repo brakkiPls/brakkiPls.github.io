@@ -171,4 +171,7 @@ button:hover, input:hover {
     .DoDonts {
         width: 400px;
     }
+    .Caption {
+        font-size: 50px;
+    }
 }
