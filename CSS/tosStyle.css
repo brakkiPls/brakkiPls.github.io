@@ -3,13 +3,42 @@
     color: lightblue;
     text-shadow: #000000 2px 2px 2px;
     font-family: 'Balsamiq Sans';
-    font-size: 20px;
-    max-width: 500px;
+    font-size: 25px;
+    max-width: 800px;
     margin: auto;
+}
+
+.linkHide {
+    color: lightgreen;
 }
 
 .Caption {
     font-size: 50px;
     text-decoration: underline;
     color: #7be61e;
+    max-width: 100%;
+}
+
+.red {
+    color: lightcoral;
+}
+
+.mainBox {
+    margin: auto;
+    background-color: #94c1f548;
+    box-shadow: 10px 5px 5px #120542a4;
+    border: 3px solid #123d7e9a;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.subBox {
+    margin-top: 30px;
+}
+
+th {
+    text-decoration: underline;
+    width: 25%;
 }
