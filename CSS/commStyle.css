@@ -141,7 +141,9 @@ button:hover, input:hover {
 
 @media only screen and (max-width: 800px) {
     .emote, #car {
-        width: 112px;
+        width: 100%;
+        align-self: center;
+        min-width: 50px;
     }
     #fly {
         margin-left: 0px;
@@ -169,7 +171,10 @@ button:hover, input:hover {
         margin-left: 0%;
     }
     .DoDonts {
-        width: 400px;
+        width: 100%;
+    }
+    .green, .red {
+        width: 100%;
     }
     .Caption {
         font-size: 50px;
